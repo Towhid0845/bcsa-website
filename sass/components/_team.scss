@@ -1,0 +1,100 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.team {
+  padding-top: 80px;
+}
+
+.team-item {
+  margin-bottom: 80px;
+  padding-left: 190px;
+  position: relative;
+
+  .image {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(237, 28, 36, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotateY(180deg) scale(.5);
+      transition: all linear .4s;
+      opacity: 0;
+
+      a {
+        width: 35px;
+        height: 35px;
+        border: 1px solid $white;
+        color: $white;
+        text-align: center;
+        line-height: 35px;
+        margin: 0 2px;
+        transition: all linear .2s;
+
+        &:hover {
+          background-color: $white;
+          color: $themeColor;
+        }
+      }
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.4s ease 0s
+    }
+  }
+
+  .text {
+    h4 {
+      @include font(18px, 700);
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+
+    h6 {
+      padding: 4px 14px;
+      @include font(14px, 400);
+      display: inline-block;
+      border: 1px solid rgba(34, 34, 34, 0.4);
+      margin-bottom: 30px;
+      min-width: 140px;
+      text-align: center;
+      background-color: $themeColor;
+      color: $white;
+    }
+
+    ul {
+      li {
+        margin-bottom: 8px;
+        font-weight: 600;
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  &:hover{
+    .image{
+      .overlay{
+        transform: rotateY(0deg) scale(1);
+        opacity: 1;
+      }
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}

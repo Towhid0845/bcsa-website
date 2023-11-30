@@ -1,0 +1,123 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.event-part {
+  padding-top: 80px;
+
+  .event-calender {
+    .common-title {
+      h3 {
+        &::after {
+          left: 0;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .event-box {
+    .event-item {
+      background-color: #ebf4fb;
+
+      .image {
+        width: 368px;
+        height: 246px;
+        margin-right: 24px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 193, 7, 0.6);
+          content: "";
+          transform: scale(0);
+          transition: all linear .2s;
+        }
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .text {
+        padding: 24px;
+        padding-top: 40px;
+
+        .title {
+          @include font(20px, 500);
+          text-transform: uppercase;
+          color: $black;
+          transition: all linear .2s;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+
+          &:hover {
+            color: $themeColor;
+          }
+        }
+
+        span {
+          margin: 14px 0 20px 0;
+          @include font(14px, 400);
+
+          i {
+            color: $themeColor;
+            margin-right: 5px;
+          }
+        }
+
+        small {
+          @include font(16px, 400);
+        }
+
+        .read-more {
+          font-size: 15px;
+          font-weight: 500;
+          background-color: $themeColor;
+          padding: 10px 24px;
+          color: $white;
+          position: relative;
+          z-index: 1;
+
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 0%;
+            background-color: #1D272F;
+            content: "";
+            z-index: -9;
+            transition: all linear .2s;
+          }
+
+          &:hover {
+            &::before {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .image {
+          &::before {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    .event-item+.event-item {
+      margin-top: 24px;
+    }
+  }
+}

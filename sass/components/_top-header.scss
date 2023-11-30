@@ -1,0 +1,33 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.top-header {
+  background-color: $black;
+
+  .social {
+    a {
+      color: $white;
+      @include font(16px, 400);
+      margin-right: 20px;
+      line-height: 40px;
+      transition: all linear .2s;
+
+      &:hover {
+        color: $themeColor;
+      }
+    }
+  }
+
+  .info-link {
+    a {
+      color: $white;
+      margin-left: 20px;
+      line-height: 40px;
+      transition: all linear .2s;
+
+      &:hover {
+        color: $themeColor;
+      }
+    }
+  }
+}

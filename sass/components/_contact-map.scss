@@ -1,0 +1,59 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.contact-map {
+  padding-top: 80px;
+
+  .map-container {
+
+    .map {
+      width: 100%;
+      height: 600px;
+
+      iframe {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    .contact-form {
+      padding: 30px;
+      width: 570px;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .form-control {
+        height: 50px;
+        border-radius: 0;
+      }
+
+      .form-select {
+        height: 50px;
+        border-radius: 0;
+      }
+
+      .form-textarea {
+        height: 120px;
+        resize: none;
+      }
+
+      button {
+        background-color: $themeColor;
+        @include font(16px, 500);
+        text-transform: uppercase;
+        padding: 14px 30px;
+        color: $white;
+        transition: all linear .2s;
+        border: 2px solid transparent;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          background-color: $black;
+          border-color: $themeColor;
+        }
+      }
+    }
+  }
+}

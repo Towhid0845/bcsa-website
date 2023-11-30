@@ -1,0 +1,100 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.products {
+  padding-top: 80px;
+
+  .product-bg {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+  }
+}
+
+.products-item {
+  background-color: $white;
+  margin: 0 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all linear .2s;
+
+  .image {
+    height: 180px;
+    padding: 14px;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .text {
+    padding: 24px;
+    padding-bottom: 32px;
+
+    .title {
+      @include font(20px, 600);
+      text-transform: capitalize;
+      color: $black;
+      transition: all linear .2s;
+
+      &:hover {
+        color: $themeColor;
+      }
+    }
+
+    p {
+      @include font(16px, 500);
+      margin: 10px 0 30px 0;
+      position: relative;
+      padding-bottom: 24px;
+
+      &::after {
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+      }
+
+      del {
+        color: $themeColor;
+        margin-left: 8px;
+      }
+    }
+
+    .add-to-cart {
+      @include font(15px, 500);
+      background-color: $themeColor;
+      padding: 10px 24px;
+      color: $white;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0%;
+        background-color: $black;
+        content: "";
+        z-index: -9;
+        transition: all linear .2s;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    border-color: $themeColor;
+  }
+}

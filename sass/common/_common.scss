@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "../variable/variable";
+@import "../mixin/font";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  @include font(16px, 400);
+  color: $black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.common-btn {
+  a {
+    background-color: $themeColor;
+    @include font(16px, 500);
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: $white;
+    transition: all linear .2s;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: $black;
+      border-color: $themeColor;
+    }
+  }
+}
+
+.common-title {
+  h5 {
+    @include font(16px, 400);
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    @include font(28px, 600);
+    text-transform: uppercase;
+  }
+}
+
+.title-snd {
+  padding-left: 24px;
+  padding-bottom: 43px;
+  position: relative;
+
+  &::before {
+    width: 3px;
+    height: 53px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "";
+  }
+
+  h5 {
+    @include font(18px, 400);
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    @include font(28px, 700);
+    text-transform: uppercase;
+  }
+}

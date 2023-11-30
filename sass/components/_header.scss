@@ -1,0 +1,88 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+header {
+  width: 100%;
+  padding: 4px 0;
+
+  .header-main {
+    width: 100%;
+
+    .logo {
+      a {
+        padding: 12px 0;
+        position: relative;
+      }
+    }
+  }
+
+  .header-info {
+    padding-left: 180px;
+    display: flex;
+    padding-top: 13px;
+    padding-bottom: 11px;
+
+    .single-header-contact-info {
+      vertical-align: middle;
+      position: relative;
+      width: 35%;
+
+      .icon-block {
+        display: table-cell;
+
+        i {
+          color: $themeColor;
+          font-size: 26px;
+          position: relative;
+          top: 10px;
+        }
+      }
+
+      .text-block {
+        display: table-cell;
+        padding-left: 20px;
+
+        p {
+          @include font (15px, 400);
+          color: #5a5a5a;
+
+          span {
+            font-weight: 600;
+            color: $black;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .social {
+        a {
+          width: 40px;
+          height: 40px;
+          background-color: $white;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px;
+          color: $black;
+          font-size: 14px;
+          box-shadow: 0px 3px 4px #d3d3d3;
+          transition: all linear .2s;
+          margin-left: 12px;
+
+          &:hover {
+            background-color: $themeColor;
+            color: $white;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        width: 50%;
+        margin-right: 40px;
+      }
+
+      &:last-child {
+        width: 24%;
+      }
+    }
+  }
+}

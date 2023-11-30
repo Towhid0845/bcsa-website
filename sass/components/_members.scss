@@ -1,0 +1,41 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.members {
+  background-color: #27313A;
+  padding: 60px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: $themeColor;
+    content: "";
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .member-box {
+    width: 1000px;
+  }
+
+  .member-item {
+    img {
+      filter: brightness(0) invert(1);
+      width: 70px;
+    }
+
+    h4 {
+      @include font(42px, 700);
+      color: $themeColor;
+      margin: 14px 0 10px 0;
+    }
+
+    p {
+      @include font(18px, 500);
+      color: $white;
+    }
+  }
+}

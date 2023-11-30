@@ -1,0 +1,142 @@
+@media (min-width:1200px) and (max-width:1399px) {
+
+  // common css part start
+  .title-snd h3 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  // common css part end
+  // top header part start
+  header .header-info {
+    padding-left: 55px;
+  }
+
+  .top-header .info-link a {
+    font-size: 15px;
+  }
+
+  // top header part end
+  // header part start
+  header {
+    padding: 8px 0;
+  }
+
+  header .header-info .single-header-contact-info .text-block p {
+    font-size: 14px;
+  }
+
+  // header part end
+  // navbar part strt
+  nav ul li a {
+    font-size: 13px !important;
+    padding: 9px 12px !important;
+  }
+
+  .navbar-nav .search .big-search {
+    width: 63px;
+    height: 62px;
+    line-height: 62px;
+  }
+
+  nav ul li ul {
+    width: 230px;
+  }
+
+  .get-quote {
+    padding: 6px 20px;
+    font-size: 13px;
+  }
+
+  // navbar part end
+  // banner part start
+  .banner .banner-slider {
+    padding: 140px 0;
+  }
+
+  .banner .banner-slider .text h2 {
+    font-size: 44px;
+  }
+
+  // banner part end
+  // service part start
+  .product-item .text h4 {
+    font-size: 18px;
+  }
+
+  // service part end
+  // about part start
+  .about .about-bg .about-info {
+    max-width: 556px;
+    padding-left: 20px;
+  }
+
+  .about .about-bg .about-video .btn-option h4 {
+    font-size: 16px;
+  }
+
+  .about .about-bg .about-video .btn-option {
+    text-align: left;
+    padding: 13px 0 14px 60px;
+  }
+
+  .about .about-bg .about-video .btn-option i {
+    font-size: 22px;
+    top: 11px;
+  }
+
+  .about .about-bg .about-video .tab-menu {
+    width: 210px;
+  }
+
+  .about .about-bg .about-info ul li h4 {
+    font-size: 26px;
+  }
+
+  // about part end
+  // ceo part start
+  .ceo-messages .msg-bg .text {
+    width: 663px;
+  }
+
+  // ceo part end
+  // footer part start
+
+  footer .footer-bg .links {
+    margin-left: 1rem !important;
+  }
+
+  footer .footer-bg .links ul li a {
+    font-size: 15px;
+  }
+
+  footer .footer-bg .getin-touch {
+    width: 283px;
+    margin-left: -34px;
+  }
+
+  footer .footer-bg {
+    padding: 60px 0 0px 0;
+  }
+
+  footer .footer-bg .footer-title {
+    font-size: 20px;
+  }
+
+  footer .footer-bg .footer-btm a {
+    font-size: 15px;
+  }
+
+  // footer part end
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {}
+
+@media (min-width:768px) and (max-width:991.98px) {}
+
+@media (min-width:576px) and (max-width:767.98px) {}
+
+@media (max-width:575.98px) {}
