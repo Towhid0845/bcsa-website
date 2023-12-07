@@ -1067,51 +1067,26 @@ footer .footer-bg .footer-btm a {
 .content-page .content-main h1 {
   font-size: 32px;
   font-weight: 700;
+  width: fit-content;
   margin-bottom: 40px;
   position: relative;
-  padding: 15px 0;
+  padding: 15px;
   z-index: 1;
-  padding-left: 24px;
-}
-.content-page .content-main h1::before {
-  width: 360px;
-  height: 100%;
-  background-image: linear-gradient(to right, rgba(244, 70, 47, 0.4), #fff);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  content: "";
-  z-index: -1;
+  background: linear-gradient(to right, rgba(244, 70, 47, 0.4), #fff);
 }
 .content-page .content-main p {
   text-align: justify;
+  padding-bottom: 10px;
 }
-.content-page .content-box .small-image {
-  float: left;
-  margin-right: 24px;
-  margin-bottom: 20px;
-}
-.content-page .content-box .small-image img {
-  border-radius: 10px;
-}
-.content-page .content-box p + p {
+.content-page .content-main p:not(:first-child) {
   margin-top: 24px;
 }
-.content-page .content-box > img {
-  border-radius: 10px;
-  width: 100%;
-  max-height: 400px;
-}
-.content-page .content-box p:first-child {
-  margin-top: 30px;
-}
-.content-page .content-box ul li {
+.content-page .content-main ul li {
   list-style: none;
   margin-left: 40px;
   font-weight: bold;
 }
-.content-page .content-box ul li::before {
+.content-page .content-main ul li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
   color: rgb(9, 255, 0);
@@ -1121,12 +1096,12 @@ footer .footer-bg .footer-btm a {
   font-weight: 900;
   font-size: 20px;
 }
-.content-page ul li {
+.content-page .content-main ul li {
   list-style: none;
   margin-left: 40px;
   font-weight: bold;
 }
-.content-page ul li::before {
+.content-page .content-main ul li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
   color: #FFC107;
@@ -1136,20 +1111,27 @@ footer .footer-bg .footer-btm a {
   font-weight: 900;
   font-size: 20px;
 }
-.content-page blockquote {
+.content-page .content-main ol li {
+  margin-left: 40px;
+}
+.content-page .content-main ol li::marker {
+  font-weight: bold;
+}
+.content-page .content-main blockquote {
   margin: 30px 0;
   padding: 20px 80px 20px 40px;
   background-color: #ffffff;
   border-bottom: 3px solid #FFC107;
   position: relative;
+  display: inline-block;
 }
-.content-page blockquote h4 {
+.content-page .content-main blockquote h4 {
   font-size: 24px;
   font-weight: 600;
   color: #666666;
   line-height: 40px;
 }
-.content-page blockquote h4::before {
+.content-page .content-main blockquote h4::before {
   font-family: "Font Awesome 5 Free";
   content: "\f10d";
   color: #FFC107;
@@ -1157,185 +1139,23 @@ footer .footer-bg .footer-btm a {
   padding-right: 30px;
   font-size: 30px;
 }
-.content-page table {
+.content-page .content-main table {
   margin-left: 40px;
 }
-.content-page table tr th {
+.content-page .content-main table tr th {
   min-width: 150px;
   text-align: end;
 }
-.content-page table tr td {
+.content-page .content-main table tr td {
   padding-left: 20px;
 }
-.content-page .note {
-  padding-top: 50px;
+.content-page .content-box .small-image {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
-.content-page .note p {
-  color: #ec0c0c;
-  font-weight: bold;
-}
-.content-page .note p::before {
-  content: "**";
-}
-.content-page .note p::after {
-  content: "**";
-}
-.content-page .content-ul {
-  padding-left: 12px;
-}
-.content-page .content-ul li {
-  line-height: 30px;
-}
-.content-page .custom-content-ul {
-  list-style: none;
-}
-.content-page .custom-content-ul li {
-  line-height: 36px;
-}
-.content-page .custom-content-ul li img {
-  margin-right: 5px;
-}
-.content-page .custom-ul-inline-style {
-  list-style: none;
-}
-.content-page .custom-ul-inline-style li {
-  display: inline-block;
-  padding: 4px 20px;
-  border-radius: 3px;
-  background-color: #FFC107;
-  margin-right: 8px;
-  color: #ffffff;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 600;
-}
-.content-page .custom-ul-inline-style li:nth-child(2) {
-  background-color: #6528F7;
-}
-.content-page .custom-ul-inline-style li:nth-child(3) {
-  background-color: #F31559;
-}
-.content-page .custom-ul-inline-style li:nth-child(4) {
-  background-color: #1D5D9B;
-}
-.content-page .custom-ul-inline-style li:nth-child(5) {
-  background-color: #EF6262;
-}
-.content-page .custom-ul-inline-style li:nth-child(6) {
-  background-color: #9376E0;
-}
-.content-page .custom-ul-inline-style li:nth-child(7) {
-  background-color: #40128B;
-}
-.content-page .custom-ul-inline-style li:nth-child(8) {
-  background-color: #EA906C;
-}
-.content-page .custom-ul-inline-style li:nth-child(9) {
-  background-color: #A0C49D;
-}
-.content-page .custom-ul-inline-style li:nth-child(10) {
-  background-color: #E966A0;
-}
-.content-page .custom-ul-inline-style li:nth-child(11) {
-  background-color: #525FE1;
-}
-.content-page .custom-ul-inline-style li:nth-child(12) {
-  background-color: #4C4B16;
-}
-.content-page .custom-ul-block-style {
-  list-style: none;
-}
-.content-page .custom-ul-block-style li {
-  display: inline-block;
-  width: 100%;
-  padding: 4px 20px;
-  border-radius: 3px;
-  background-color: #FFC107;
-  margin-right: 8px;
-  color: #ffffff;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 600;
-}
-.content-page .custom-ul-block-style li:nth-child(2) {
-  background-color: #11009E;
-}
-.content-page .custom-ul-block-style li:nth-child(3) {
-  background-color: #F31559;
-}
-.content-page .custom-ul-block-style li:nth-child(4) {
-  background-color: #116D6E;
-}
-.content-page .custom-ul-block-style li:nth-child(5) {
-  background-color: #EF6262;
-}
-.content-page .custom-ul-block-style li:nth-child(6) {
-  background-color: #9376E0;
-}
-.content-page .custom-ul-block-style li:nth-child(7) {
-  background-color: #40128B;
-}
-.content-page .custom-ul-block-style li:nth-child(8) {
-  background-color: #EA906C;
-}
-.content-page .custom-ul-block-style li:nth-child(9) {
-  background-color: #A0C49D;
-}
-.content-page .custom-ul-block-style li:nth-child(10) {
-  background-color: #E966A0;
-}
-.content-page .custom-ul-block-style li:nth-child(11) {
-  background-color: #525FE1;
-}
-.content-page .custom-ul-block-style li:nth-child(12) {
-  background-color: #4C4B16;
-}
-.content-page .content-background-style {
-  background-color: #FFC107;
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  padding: 8px;
-  border-radius: 3px;
-}
-.content-page .content-border-style {
-  border-bottom: 1px solid #1D272F;
-  padding-bottom: 10px;
-  color: #1D272F;
-}
-.content-page .content-after-border-style {
-  position: relative;
-  padding-bottom: 10px;
-  color: #1D272F;
-}
-.content-page .content-after-border-style::before {
-  width: 100px;
-  height: 2px;
-  background-color: #1D272F;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-}
-.content-page .content-border-dash-style {
-  border: 2px dashed #1D272F;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1D272F;
-  padding: 6px 10px;
-}
-.content-page .content-border-dots-style {
-  border: 2px dotted #1D272F;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1D272F;
-  padding: 6px 10px;
-}
-.content-page .content-table .action {
-  background-color: #FFC107;
-  border: 0;
-  padding: 5px 10px;
-  color: #ffffff;
+.content-page .content-box .small-image img {
+  border-radius: 10px;
 }
 
 .card1 {
