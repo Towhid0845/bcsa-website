@@ -1,44 +1,101 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
-.card1 {
-  padding-top: 60px;
+.news-list {
+  padding: 60px 0;
   background-color: #f2f2f2;
 
-  .card1_item {
-    background-color: $white;
+  .news-items {
+    // margin: 0 12px;
     margin-bottom: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
-    .image {
-      border-radius: unset;
-      width: 100%;
-      height: 286px;
+    .news-image {
+      position: relative;
+      height: 305px;
 
       img {
+        height: 100%;
         object-fit: cover;
+        object-position: center;
+      }
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 44, 66, 0.6);
+        transform: scaleX(0);
+        transition: all .5s ease 0s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          color: $white;
+          font-size: 35px;
+        }
       }
     }
 
-    .text {
-      margin-top: 0;
-      padding: 30px;
+    .news-text {
+      background-color: $white;
 
-      .title {
-        margin-top: 0;
-        margin-bottom: 12px;
+      .info {
+        padding: 30px;
+        height: 310px;
 
-        &:hover {
-          color: #a3e900;
-          border-radius: 10px;
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          color: $black;
+          transition: all linear .2s;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+
+          &:hover {
+            color: $themeColor;
+          }
+        }
+
+        p {
+          margin-top: 15px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
         }
       }
 
-      .info p {
-        margin-top: 20px;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+      .news-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 15px 40px;
+
+        a {
+          font-size: 15px;
+          font-weight: 500;
+          color: $black;
+          transition: all linear .2s;
+
+          &:hover {
+            color: $themeColor;
+          }
+        }
+
+        a+a {
+          margin-left: 30px;
+        }
+      }
+    }
+
+    &:hover {
+      .overlay {
+        transform: scaleX(1);
       }
     }
   }

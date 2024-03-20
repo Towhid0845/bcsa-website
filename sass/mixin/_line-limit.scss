@@ -1,0 +1,6 @@
+@mixin line($n) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $n !important;
+  -webkit-box-orient: vertical;
+}

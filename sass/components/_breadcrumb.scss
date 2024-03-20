@@ -11,7 +11,7 @@
 
     .text {
       padding: 75px 0;
-      background: linear-gradient(to right, rgb(0 0 0 / 10%), rgb(0 0 0 / 40%), rgb(255 255 255 / 10%));
+      background: linear-gradient(to right, rgb(0 0 0 / 0%), rgb(0 0 0 / 30%), rgb(255 255 255 / 0%));
 
       h3 {
         @include font(56px, 700);
