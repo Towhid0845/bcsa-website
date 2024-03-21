@@ -1,0 +1,59 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.album,
+.photo {
+    padding: 80px 0;
+
+
+}
+
+.gallery-item {
+    background-color: #f2f2f2;
+    transition: all linear .2s;
+    border: 1px solid #ddd;
+    margin-bottom: 24px;
+
+    .image {
+        height: 218px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            transition: all linear .2s;
+        }
+
+        i {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 45px;
+            height: 45px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 45px;
+            color: #e41b2e;
+            font-size: 16px;
+        }
+    }
+
+    .text {
+        padding: 14px;
+        min-height: 116px;
+
+        h6 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #414246;
+            line-height: 22px;
+            @include line(2);
+        }
+    }
+
+    &:hover .image img {
+        transform: scale(1.1);
+    }
+}

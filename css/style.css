@@ -64,6 +64,38 @@ body {
   border-color: #FFC107;
 }
 
+.read-more {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #FFC107;
+  padding: 5px 15px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.read-more::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  background-color: #1D272F;
+  content: "";
+  z-index: -9;
+  transition: all linear 0.2s;
+}
+.read-more:hover {
+  color: #ffffff;
+}
+.read-more:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.rm-lg {
+  padding: 10px 24px;
+}
+
 .common-title h5 {
   font-size: 16px;
   font-weight: 400;
@@ -215,6 +247,7 @@ nav ul li a {
   line-height: 45px !important;
   transition: all linear 0.3s;
   position: relative;
+  cursor: pointer;
 }
 nav ul li a i {
   position: relative;
@@ -685,30 +718,6 @@ nav ul li:hover > ul {
   font-size: 16px;
   font-weight: 400;
 }
-.event-part .event-box .event-item .text .read-more {
-  font-size: 15px;
-  font-weight: 500;
-  background-color: #FFC107;
-  padding: 10px 24px;
-  color: #ffffff;
-  position: relative;
-  z-index: 1;
-}
-.event-part .event-box .event-item .text .read-more::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 0%;
-  background-color: #1D272F;
-  content: "";
-  z-index: -9;
-  transition: all linear 0.2s;
-}
-.event-part .event-box .event-item .text .read-more:hover::before {
-  width: 100%;
-  height: 100%;
-}
 .event-part .event-box .event-item:hover .image::before {
   transform: scale(1);
 }
@@ -1168,29 +1177,16 @@ footer .footer-bg .footer-btm a {
 .news-list .news-items .news-image {
   position: relative;
   height: 305px;
+  overflow: hidden;
+}
+.news-list .news-items .news-image a {
+  height: 100%;
 }
 .news-list .news-items .news-image img {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-.news-list .news-items .news-image .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 44, 66, 0.6);
-  transform: scaleX(0);
   transition: all 0.5s ease 0s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.news-list .news-items .news-image .overlay i {
-  color: #ffffff;
-  font-size: 35px;
 }
 .news-list .news-items .news-text {
   background-color: #ffffff;
@@ -1235,8 +1231,115 @@ footer .footer-bg .footer-btm a {
 .news-list .news-items .news-text .news-footer a + a {
   margin-left: 30px;
 }
-.news-list .news-items:hover .overlay {
-  transform: scaleX(1);
+.news-list .news-items:hover img {
+  transform: scale(1.1);
+}
+
+.event-list {
+  padding-bottom: 80px;
+}
+.event-list .event-calender {
+  position: sticky;
+  top: 80px;
+  bottom: 0;
+}
+
+.shop-list {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+.shop-list .products-item {
+  margin: 0 0 24px;
+}
+
+.partner-list {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+.partner-list .partner-item {
+  padding-top: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+}
+.partner-list .partner-item .image {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.partner-list .partner-item .image img {
+  height: 100%;
+  border-radius: 20px;
+  transition: unset;
+  transform: scale(1);
+  object-fit: cover;
+}
+.partner-list .partner-item .text {
+  margin-top: 0;
+  padding: 20px;
+}
+.partner-list .partner-item .text .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0A0B0F;
+  margin: 0px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical;
+}
+
+.album,
+.photo {
+  padding: 80px 0;
+}
+
+.gallery-item {
+  background-color: #f2f2f2;
+  transition: all linear 0.2s;
+  border: 1px solid #ddd;
+  margin-bottom: 24px;
+}
+.gallery-item .image {
+  height: 218px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-item .image img {
+  height: 100%;
+  object-fit: cover;
+  transition: all linear 0.2s;
+}
+.gallery-item .image i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  color: #e41b2e;
+  font-size: 16px;
+}
+.gallery-item .text {
+  padding: 14px;
+  min-height: 116px;
+}
+.gallery-item .text h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #414246;
+  line-height: 22px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical;
+}
+.gallery-item:hover .image img {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

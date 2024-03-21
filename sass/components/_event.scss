@@ -76,35 +76,6 @@
         small {
           @include font(16px, 400);
         }
-
-        .read-more {
-          font-size: 15px;
-          font-weight: 500;
-          background-color: $themeColor;
-          padding: 10px 24px;
-          color: $white;
-          position: relative;
-          z-index: 1;
-
-          &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 0%;
-            background-color: #1D272F;
-            content: "";
-            z-index: -9;
-            transition: all linear .2s;
-          }
-
-          &:hover {
-            &::before {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
       }
 
       &:hover {
