@@ -1,0 +1,271 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+// .category-page {
+//   background-color: $lightbg1;
+
+// .gshop-sidebar {
+//     position: relative;
+//   }
+.sidebar-widget {
+  background-color: $white;
+}
+
+.total-filter {
+
+  .filter {
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    a {
+      background-color: $black;
+      padding: 0 5px;
+      color: $white;
+
+      i {
+        font-size: 14px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.listing-top {
+
+  font-family: 'RobotoM';
+
+  input {
+    height: 35px;
+    width: 65px;
+  }
+
+  .nice-select {
+    border: 1px solid $black !important;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 3px;
+    // font-family: 'Rjudson';
+    font-family: 'RobotoR';
+
+    &::after {
+      width: 7px;
+      height: 7px;
+    }
+
+    &:active,
+    &.open,
+    &:focus {
+      border: 1px solid $black !important;
+    }
+  }
+
+  .nice-select .option.selected {
+    font-family: 'RobotoB';
+  }
+}
+
+.product-item {
+  .product-img {
+    height: 247px;
+  }
+
+  .product-info {
+    background-color: $white;
+    height: 118px;
+  }
+}
+
+// }
+
+.search-form {
+  input {
+    border: 1px solid #e9e9e9;
+    padding: 11px 16px;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+  }
+
+  .submit-icon-btn-secondary {
+    width: 48px;
+    height: 48px;
+    background-color: $themeColor;
+    color: $white;
+    text-align: center;
+    line-height: 48px;
+    flex-shrink: 0;
+    border-radius: 0 5px 5px 0;
+    transition: all .3s ease-in-out;
+    border: none;
+  }
+}
+
+.widget-nav li a {
+  color: #5d6374;
+
+  .total-count {
+    min-width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+  }
+}
+
+// -------------------------------------------------
+.title3 {
+  h3 {
+    @include font(16px, 700);
+  }
+
+  i {
+    transition: 0.3s ease-in-out;
+  }
+
+  .hr-line {
+    height: 2px;
+    background-color: #fff8f2;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      left: 0;
+      top: 0;
+      background-color: rgba(255, 124, 8, .8);
+    }
+  }
+
+  .price-range-block {
+    margin-top: 50px;
+    width: 100%;
+
+    .price-filter-range {
+      margin: 20px auto;
+      width: 93%;
+    }
+  }
+}
+
+.collapsed i {
+  rotate: 180deg;
+}
+
+.ui-slider-horizontal {
+  height: .6em;
+}
+
+.ui-slider-horizontal {
+  margin-bottom: 15px;
+}
+
+.ui-widget-header {
+  background: $themeColor;
+}
+
+.ui-slider-handle.ui-corner-all.ui-state-default {
+  border: 2px solid $themeColor !important;
+  background: $themeColor !important;
+  border-radius: 10px;
+  top: -5px;
+}
+
+.ui-state-active {
+  box-shadow: 0 0 5px 2px $black;
+}
+
+.price-range-search {
+  width: 45%;
+  background-color: $themeColor;
+  border: 1px solid $themeColor;
+  min-width: 40%;
+  display: inline-block;
+  height: 46px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: $black;
+  transition: .5s ease;
+
+  &:hover {
+    background-color: $themeColor;
+    color: $white;
+  }
+}
+
+.price-range-field {
+  width: 45%;
+  min-width: 16%;
+  background-color: $white;
+  border: 1px solid $themeColor;
+  color: black;
+  border-radius: 5px;
+  height: 36px;
+  padding: 5px;
+}
+
+.search-results-block {
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: .25em;
+  margin-right: 10px;
+}
+
+.form-check-input:checked {
+  background-color: $themeColor;
+  border-color: $themeColor;
+}
+
+.check-rating ul li {
+  list-style: none;
+}
+
+.check-rating ul li i {
+  color: #999;
+  font-size: 12px;
+}
+
+.check-rating ul li i.fill-color {
+  color: $themeColor;
+}
+
+.sidebar-widget .total-count {
+  min-width: 32px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  text-align: center;
+
+}
+
+.form-check:hover .total-count,
+.widget-nav li:hover .total-count {
+  background-color: #6eb356;
+  color: #fff;
+}
+
+.form-check,
+.widget-nav li+li {
+  margin-top: 12px;
+}
+
+.btn-outline {
+  border: 1px solid #e4e4e4;
+}
+
+.btn-outline:hover {
+  background-color: #6eb356;
+  color: #fff;
+  border-color: #6eb356;
+}
