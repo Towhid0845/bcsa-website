@@ -117,6 +117,8 @@
 
 // -------------------------------------------------
 .title3 {
+  cursor: pointer;
+
   h3 {
     @include font(16px, 700);
   }
@@ -142,15 +144,6 @@
     }
   }
 
-  .price-range-block {
-    margin-top: 50px;
-    width: 100%;
-
-    .price-filter-range {
-      margin: 20px auto;
-      width: 93%;
-    }
-  }
 }
 
 .collapsed i {
@@ -178,6 +171,16 @@
 
 .ui-state-active {
   box-shadow: 0 0 5px 2px $black;
+}
+
+.price-range-block {
+  width: 100%;
+  margin-top: 50px;
+
+  .price-filter-range {
+    margin: 20px auto;
+    width: 93%;
+  }
 }
 
 .price-range-search {
@@ -249,8 +252,14 @@
 
 }
 
+.widget-nav a {
+  margin-top: 12px;
+  color: $black;
+}
+
 .form-check:hover .total-count,
-.widget-nav li:hover .total-count {
+.widget-nav li:hover .total-count,
+.widget-nav a:hover .total-count {
   background-color: #6eb356;
   color: #fff;
 }
@@ -269,3 +278,27 @@
   color: #fff;
   border-color: #6eb356;
 }
+
+.dropdown-container a,
+.dropdown-btn {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  // transition: all 0.3s ease-in-out;
+  display: none;
+  padding-left: 10px;
+  background-color: #fafafa;
+}
+
+// .active-btn {
+//   transition: all 0.3s ease-in-out;
+// }

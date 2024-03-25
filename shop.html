@@ -95,45 +95,49 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Membership <i class="fas fa-sort-down"></i></a>
+            <a class="nav-link">Membership <i class="fas fa-sort-down"></i></a>
             <ul class="list-unstyled">
-              <li><a href="">Junior</a></li>
-              <li><a href="">Associate</a></li>
+              <li><a href="">search box</a></li>
+              <li><a href="">All</a></li>
+              <li><a href="">EC</a></li>
               <li><a href="">Lifetime</a></li>
+              <li><a href="">General Member</a></li>
+              <li><a href="">Associate</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News <i class="fas fa-sort-down"></i></a>
+            <a class="nav-link">News <i class="fas fa-sort-down"></i></a>
             <ul class="list-unstyled">
-              <li><a href="">BCSA</a></li>
+              <li><a href="news-list.html">BCSA</a></li>
               <li><a href="">Cricket97</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="shop.html">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tours and Events <i class="fas fa-sort-down"></i></a>
+            <a class="nav-link">Tours and Events <i class="fas fa-sort-down"></i></a>
             <ul class="list-unstyled">
-              <li><a href="">Event Calendar</a></li>
+              <li><a href="event-list.html">Event Calendar</a></li>
               <li><a href="">Archive</a></li>
-              <li><a href="">Photos and Videos</a></li>
+              <li><a href="photo-album.html">Photos</a></li>
+              <li><a href="video-album.html">Videos</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Partners</a>
+            <a class="nav-link" href="partner-list.html">Partners</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cricket97</a>
+            <a class="nav-link" target="_blank" href="https://cricket97.com/">Cricket97</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact-us.html">Contact</a>
           </li>
           <div class="search position-absolute">
             <i class="fas fa-search big-search"></i>
@@ -227,13 +231,135 @@
               </div>
             </div>
             <div class="sidebar-widget common-widget p-4 mb-1 bg-white">
+              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#category"
+                aria-expanded="false" aria-controls="brand">
+                <h3 class="mb-0 flex-shrink-0">Category</h3>
+                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
+                <i class="fa-solid fa-chevron-up align-self-center"></i>
+              </div>
+              <div class="collapse" id="category">
+                <ul class="widget-nav mt-4">
+                  <a href="#" class="d-flex">
+                    <span>Jerseys</span>
+                    <span class="total-count ms-auto">48</span>
+                  </a>
+                  <a class="d-flex dropdown-btn">
+                    <span>T-Sharts</span>
+                    <span class="total-count ms-auto"><i class="fa fa-caret-down text-end"></i></span>
+                  </a>
+                  <div class="dropdown-container">
+                    <a href="#" class="d-flex">Men <span class="total-count ms-auto">48</span></a>
+                    <a href="#" class="d-flex">Women <span class="total-count ms-auto">48</span></a>
+                    <a href="#" class="d-flex">Kids <span class="total-count ms-auto">48</span></a>
+                  </div>
+                  <a href="#" class="d-flex">
+                    <span>Polos</span>
+                    <span class="total-count ms-auto">48</span>
+                  </a>
+                  <a href="#" class="d-flex">
+                    <span>Joggers</span>
+                    <span class="total-count ms-auto">48</span>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar-widget common-widget p-4 mb-1 bg-white">
+              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#size" aria-expanded="false"
+                aria-controls="size">
+                <h3 class="mb-0 flex-shrink-0">Size</h3>
+                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
+                <i class="fa-solid fa-chevron-up align-self-center"></i>
+              </div>
+              <div class="collapse" id="size">
+                <div class="reset-filter d-flex justify-content-between py-3">
+                  <p><span>1</span> selected</p>
+                  <a class="border-bottom border-dark" href="#">Reset</a>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
+                  <label class="form-check-label" for="flexCheckDefaultOne">
+                    Small
+                  </label>
+                  <span class="total-count ms-auto">48</span>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
+                  <label class="form-check-label" for="flexCheckDefaultOne">
+                    Medium
+                  </label>
+                  <span class="total-count ms-auto">48</span>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
+                  <label class="form-check-label" for="flexCheckDefaultOne">
+                    Large
+                  </label>
+                  <span class="total-count ms-auto">48</span>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
+                  <label class="form-check-label" for="flexCheckDefaultOne">
+                    XL
+                  </label>
+                  <span class="total-count ms-auto">48</span>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-widget price-filter-widget bg-white p-4 mb-1">
+              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#price" aria-expanded="false"
+                aria-controls="price">
+                <h3 class="mb-0 flex-shrink-0">Price</h3>
+                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
+                <i class="fa-solid fa-chevron-up align-self-center"></i>
+              </div>
+              <div class="price-range-block collapse" id="price">
+                <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                <div class="d-flex justify-content-between align-items-center" style="margin:30px auto">
+                  <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price"
+                    class="price-range-field" />
+                  <i class="fa-solid fa-minus"></i>
+                  <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price"
+                    class="price-range-field" />
+                </div>
+                <button class="price-range-search" id="price-range-submit">Search</button>
+              </div>
+            </div>
+            <div class="sidebar-widget common-widget p-4 mb-1 bg-white">
+              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#stock" aria-expanded="false"
+                aria-controls="stock">
+                <h3 class="mb-0 flex-shrink-0">Availability</h3>
+                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
+                <i class="fa-solid fa-chevron-up align-self-center"></i>
+              </div>
+              <div class="collapse" id="stock">
+                <div class="reset-filter d-flex justify-content-between py-3">
+                  <p><span>1</span> selected</p>
+                  <a class="border-bottom border-dark" href="#">Reset</a>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
+                  <label class="form-check-label" for="flexCheckDefaultOne">
+                    In Stock
+                  </label>
+                  <span class="total-count ms-auto">48</span>
+                </div>
+                <div class="form-check d-flex">
+                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
+                  <label class="form-check-label" for="flexCheckDefaultOne">
+                    Out of Stock
+                  </label>
+                  <span class="total-count ms-auto">48</span>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-widget common-widget p-4 mb-1 bg-white">
               <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#brand" aria-expanded="false"
                 aria-controls="brand">
                 <h3 class="mb-0 flex-shrink-0">Brand</h3>
                 <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
                 <i class="fa-solid fa-chevron-up align-self-center"></i>
               </div>
-              <div class="collapse show" id="brand">
+              <div class="collapse" id="brand">
                 <div class="reset-filter d-flex justify-content-between py-3">
                   <p><span>1</span> selected</p>
                   <a class="border-bottom border-dark" href="#">Reset</a>
@@ -268,53 +394,6 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar-widget price-filter-widget bg-white p-4 mb-1">
-              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#price" aria-expanded="false"
-                aria-controls="price">
-                <h3 class="mb-0 flex-shrink-0">Price</h3>
-                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
-                <i class="fa-solid fa-chevron-up align-self-center"></i>
-              </div>
-              <div class="price-range-block collapse show" id="price">
-                <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
-                <div class="d-flex justify-content-between align-items-center" style="margin:30px auto">
-                  <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price"
-                    class="price-range-field" />
-                  <i class="fa-solid fa-minus"></i>
-                  <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price"
-                    class="price-range-field" />
-                </div>
-                <button class="price-range-search" id="price-range-submit">Search</button>
-              </div>
-            </div>
-            <div class="sidebar-widget common-widget p-4 mb-1 bg-white">
-              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#stock" aria-expanded="false"
-                aria-controls="stock">
-                <h3 class="mb-0 flex-shrink-0">Availability</h3>
-                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
-                <i class="fa-solid fa-chevron-up align-self-center"></i>
-              </div>
-              <div class="collapse show" id="stock">
-                <div class="reset-filter d-flex justify-content-between py-3">
-                  <p><span>1</span> selected</p>
-                  <a class="border-bottom border-dark" href="#">Reset</a>
-                </div>
-                <div class="form-check d-flex">
-                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
-                  <label class="form-check-label" for="flexCheckDefaultOne">
-                    In Stock
-                  </label>
-                  <span class="total-count ms-auto">48</span>
-                </div>
-                <div class="form-check d-flex">
-                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
-                  <label class="form-check-label" for="flexCheckDefaultOne">
-                    Out of Stock
-                  </label>
-                  <span class="total-count ms-auto">48</span>
-                </div>
-              </div>
-            </div>
             <div class="sidebar-widget rating-widget p-4 mb-1 bg-white">
               <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#rating" aria-expanded="false"
                 aria-controls="rating">
@@ -322,7 +401,7 @@
                 <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
                 <i class="fa-solid fa-chevron-up align-self-center"></i>
               </div>
-              <div class="check-rating collapse show" id="rating">
+              <div class="check-rating collapse" id="rating">
                 <div class="reset-filter d-flex justify-content-between py-3">
                   <p><span>1</span> selected</p>
                   <a class="border-bottom border-dark" href="#">Reset</a>
@@ -404,63 +483,26 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar-widget common-widget p-4 mb-1 bg-white">
-              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#size" aria-expanded="false"
+            <div class="sidebar-widget tags-widget p-4 mb-1 bg-white">
+              <div class="title3 curpo d-flex" data-bs-toggle="collapse" data-bs-target="#tag" aria-expanded="false"
                 aria-controls="size">
-                <h3 class="mb-0 flex-shrink-0">Size</h3>
+                <h3 class="mb-0 flex-shrink-0">Tags</h3>
                 <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
                 <i class="fa-solid fa-chevron-up align-self-center"></i>
               </div>
-              <div class="collapse show" id="size">
-                <div class="reset-filter d-flex justify-content-between py-3">
-                  <p><span>1</span> selected</p>
-                  <a class="border-bottom border-dark" href="#">Reset</a>
+
+              <div class="collapse" id="tag">
+                <div class="mt-4 d-flex gap-2 flex-wrap">
+                  <a href="#" class="btn btn-outline btn-sm">Vegetable</a>
+                  <a href="#" class="btn btn-outline btn-sm">Healthy</a>
+                  <a href="#" class="btn btn-outline btn-sm">Meat</a>
+                  <a href="#" class="btn btn-outline btn-sm">Organic</a>
+                  <a href="#" class="btn btn-outline btn-sm">Nature</a>
+                  <a href="#" class="btn btn-outline btn-sm">food</a>
+                  <a href="#" class="btn btn-outline btn-sm">bd food</a>
+                  <a href="#" class="btn btn-outline btn-sm">fish</a>
+                  <a href="#" class="btn btn-outline btn-sm">vegetable</a>
                 </div>
-                <div class="form-check d-flex">
-                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
-                  <label class="form-check-label" for="flexCheckDefaultOne">
-                    Small
-                  </label>
-                  <span class="total-count ms-auto">48</span>
-                </div>
-                <div class="form-check d-flex">
-                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
-                  <label class="form-check-label" for="flexCheckDefaultOne">
-                    Medium
-                  </label>
-                  <span class="total-count ms-auto">48</span>
-                </div>
-                <div class="form-check d-flex">
-                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
-                  <label class="form-check-label" for="flexCheckDefaultOne">
-                    Large
-                  </label>
-                  <span class="total-count ms-auto">48</span>
-                </div>
-                <div class="form-check d-flex">
-                  <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefaultOne">
-                  <label class="form-check-label" for="flexCheckDefaultOne">
-                    XL
-                  </label>
-                  <span class="total-count ms-auto">48</span>
-                </div>
-              </div>
-            </div>
-            <div class="sidebar-widget tags-widget p-4 mb-1 bg-white">
-              <div class="title3 d-flex">
-                <h3 class="mb-0">Tags</h3>
-                <span class="hr-line w-100 position-relative d-block align-self-end ms-1"></span>
-              </div>
-              <div class="mt-4 d-flex gap-2 flex-wrap">
-                <a href="#" class="btn btn-outline btn-sm">Vegetable</a>
-                <a href="#" class="btn btn-outline btn-sm">Healthy</a>
-                <a href="#" class="btn btn-outline btn-sm">Meat</a>
-                <a href="#" class="btn btn-outline btn-sm">Organic</a>
-                <a href="#" class="btn btn-outline btn-sm">Nature</a>
-                <a href="#" class="btn btn-outline btn-sm">food</a>
-                <a href="#" class="btn btn-outline btn-sm">bd food</a>
-                <a href="#" class="btn btn-outline btn-sm">fish</a>
-                <a href="#" class="btn btn-outline btn-sm">vegetable</a>
               </div>
             </div>
           </div>
@@ -470,7 +512,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-1.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-1.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -482,7 +526,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-2.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-2.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -494,7 +540,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-3.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-3.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -506,7 +554,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-4.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-4.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -518,7 +568,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-1.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-1.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -530,7 +582,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-2.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-2.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -542,7 +596,9 @@
             <div class="col-lg-3">
               <div class="products-item">
                 <div class="image">
-                  <img src="images/p-3.png" alt="sc-1" class="img-fluid w-100">
+                  <a href="product-details.html">
+                    <img src="images/p-3.png" alt="sc-1" class="img-fluid w-100">
+                  </a>
                 </div>
                 <div class="text text-center">
                   <a href="" class="title">hooded jacket</a>
@@ -665,6 +721,23 @@
   <script src="js/pignose.calendar.full.min.js"></script>
   <script src="js/slick-animation.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active-btn");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

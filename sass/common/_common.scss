@@ -45,6 +45,10 @@ ol {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   overflow-x: hidden;
   @include font(16px, 400);

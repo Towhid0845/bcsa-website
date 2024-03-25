@@ -74,6 +74,20 @@ $(function () {
   $('.calendar').pignoseCalendar();
 
 
+  // product detils image change js
+  $(document).ready(function () {
+    $('.zoom-child-image img').click(function () {
+      let image = $(this).attr('src');
+      $('.big-side-image img').attr('src', image)
+    })
+
+    $('.zoom-child-image').on('click', function () {
+      $('.zoom-child-image.active').removeClass('active');
+      $(this).addClass('active');
+    })
+  })
+
+
   // Animation on scroll
   // window.addEventListener('load', () => {
   //   AOS.init({
