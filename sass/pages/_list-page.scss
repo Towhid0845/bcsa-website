@@ -173,3 +173,86 @@
   }
 
 }
+
+// member list page
+.member-list {
+  padding: 40px 0;
+  background-color: $bg;
+
+  .search-top {
+    .title h2 {
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .input-group {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    input {
+      height: 40px;
+      border-radius: 2px;
+      border: 1px solid #171C49;
+    }
+
+    .read-more {
+      border: none;
+      padding: 9px 24px;
+    }
+  }
+
+  .member-item {
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d0d0d0;
+    // border: 3px solid #FEC006;
+    border-top: none;
+    margin-bottom: 24px;
+
+
+    h6 {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 8px 0;
+      background-color: $themeColor;
+      color: $white;
+    }
+
+    .image {
+      height: 314px;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      padding: 24px;
+
+      a {
+        color: $black;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+
+        &:hover {
+          color: $themeColor;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
