@@ -1,0 +1,154 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.event-details-page {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.event-details-content {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.event-details-page .img {
+  width: 100%;
+  position: relative;
+}
+
+.event-details-page .img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-details-page .text h1 {
+  color: $black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.event-details-page .text ul {
+  margin-top: 30px;
+  background-color: $black;
+  padding: 24px;
+}
+
+.event-details-page .text ul li {
+  margin-right: 22px;
+}
+
+.event-details-page .text ul li:first-child {
+  color: #4ecdff;
+}
+
+.event-details-page .text ul li:nth-child(2) {
+  color: #ffab81;
+}
+
+.event-details-page .text ul li:last-child {
+  color: #adec40;
+}
+
+.event-details-page .text h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+
+.right-part {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.right-part h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #282560;
+}
+
+.right-part .news-search form {
+  position: relative;
+}
+
+.right-part .news-search input {
+  padding-right: 90px;
+  height: 48px;
+  border-radius: 0;
+  border: 1px solid #bebebe;
+}
+
+.right-part .news-search input::placeholder {
+  font-size: 15px;
+  color: rgba(72, 86, 100, 0.5);
+}
+
+.right-part .news-search input:focus :focus {
+  box-shadow: none;
+  border-color: #A66618;
+}
+
+.right-part .news-search button {
+  position: absolute;
+  height: 48px;
+  top: 0;
+  right: 0;
+  background-color: $themeColor;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.right-part .news-search button :focus {
+  box-shadow: none;
+}
+
+.right-part .news-main {
+  position: relative;
+  height: 100px;
+  background-color: #f1f1f1;
+  padding-left: 177px;
+}
+
+.right-part .news-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 177px;
+  height: 93px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.right-part .news-text h4 {
+  font-size: 18px;
+  padding-top: 8px;
+  font-weight: 600;
+  color: $black;
+  transition: .3s;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.right-part .news-text span {
+  font-size: 14px;
+  color: rgba(72, 86, 100, 1);
+  font-weight: 500;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.right-part .news-main:hover h4 {
+  color: $themeColor;
+}
+
+.sticky {
+  position: sticky;
+  top: 70px;
+}
