@@ -4,9 +4,12 @@
 // .category-page {
 //   background-color: $lightbg1;
 
-// .gshop-sidebar {
-//     position: relative;
-//   }
+.gshop-sidebar {
+  .collapsed i {
+    rotate: 180deg;
+  }
+}
+
 .sidebar-widget {
   background-color: $white;
 }
@@ -146,9 +149,7 @@
 
 }
 
-.collapsed i {
-  rotate: 180deg;
-}
+
 
 .ui-slider-horizontal {
   height: .6em;

@@ -87,7 +87,13 @@ $(function () {
     })
   })
 
+  // nice select
+  $(document).ready(function () {
+    $('select').niceSelect();
+  })
 
+
+  // NiceSelect.bind(document.getElementById("#a-select"));
   // Animation on scroll
   // window.addEventListener('load', () => {
   //   AOS.init({

@@ -1,0 +1,63 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.invoice-section {
+  background-color: $bg;
+  font-size: 18px;
+  padding-top: 30px;
+
+  .common-title {
+    .badge {
+      background-color: rgba(110, 179, 86, .1);
+      color: green;
+      font-size: 13px;
+      text-transform: capitalize;
+    }
+  }
+
+  .invoice-table-sm {
+    width: 300px;
+  }
+
+  .invoice-right {
+    a {
+      width: 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+  }
+
+  .welcome-message,
+  .shipping-address {
+    p {
+      @include font(14px, 400)
+    }
+  }
+
+  .invoice-table {
+    tr td:nth-child(2) img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+
+  }
+
+  .footer-table {
+    background-color: #F4F6F8;
+
+    tr td {
+      padding: 16px 24px;
+    }
+
+    td:last-child span {
+      color: $themeColor;
+    }
+  }
+
+}
