@@ -1,0 +1,295 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+
+.user-deshboard {
+  background-color: $bg;
+  font-size: 18px;
+  padding-top: 30px;
+
+  td,
+  p,
+  label,
+  span,
+  li {
+    font-size: 17px;
+  }
+
+  .account-info {
+    background-color: $white;
+
+    .image {
+      min-width: 150px;
+      height: 150px;
+      border: 1px solid $themeColor;
+      padding: 10px;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .profile-inf-right {
+      .achievement-box {
+
+        margin-left: 48px;
+        margin-bottom: 10px;
+
+        .icon {
+          width: 56px;
+          height: 56px;
+          background-color: #e3fff1;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .icon.bg-color-2 {
+          background-color: #fff3db;
+        }
+
+        .icon.bg-color-3 {
+          background-color: #e4f7ff;
+        }
+
+        .icon.bg-color-4 {
+          background-color: #f2e8ff;
+        }
+      }
+    }
+  }
+
+  .account-nav {
+
+    ul {
+      li {
+        img {
+          width: 14px;
+        }
+      }
+    }
+
+    .account-nav-menu li a {
+      display: block;
+      padding: 8px 24px;
+      color: #5d6374;
+    }
+
+    .account-nav-menu li a.active {
+      color: $themeColor;
+    }
+  }
+
+  .address-book-content.border-right::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(233, 233, 233, .4);
+  }
+
+  .address-book-content {
+    a {
+      color: $themeColor;
+    }
+  }
+
+  .order-history-table tr {
+    td.text-secondary {
+      color: $themeColor !important;
+    }
+
+    td,
+    th {
+      padding: 8px 24px;
+      font-family: 'RobotoR';
+
+      i {
+        color: $themeColor;
+      }
+    }
+
+    .thumbnail img {
+      width: 40px;
+      height: 40px;
+      background-color: #f4f6f8;
+      padding: 6px;
+      border-radius: 50%;
+    }
+  }
+
+  .payments-list-table tr {
+    th {}
+
+
+    td {
+
+      i {
+        color: $themeColor;
+      }
+
+      span {
+        width: 70px;
+        height: 70px;
+        background-color: #f4f6f8;
+        padding: 10px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .badge {
+        height: auto !important;
+        color: $themeColor;
+        background-color: rgba(255, 124, 8, .1);
+      }
+    }
+  }
+
+  .profile-form {
+
+    .file-upload {
+      border: 2px dashed rgba(173, 170, 170, 0.5);
+      padding: 50px 24px;
+      position: relative;
+      overflow: hidden;
+
+      input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .label-input-field {
+    position: relative;
+    margin-top: 8px;
+
+    label {
+      position: absolute;
+      left: 14px;
+      top: -12px;
+      padding: 0 8px;
+      background-color: #fff;
+
+      font-size: 16px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 16px 24px;
+      border-radius: 4px;
+      border: 1px solid #e4e4e4;
+      outline: 0;
+    }
+  }
+
+  #progress-bar {
+    display: table;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    table-layout: fixed;
+    padding: 0;
+    counter-reset: step;
+
+    li.tt-step {
+      list-style-type: none;
+      display: table-cell;
+      width: 25%;
+      float: left;
+      position: relative;
+      text-align: center;
+
+      &:before {
+        width: 30px;
+        height: 30px;
+        color: #5d6374;
+        content: counter(step);
+        counter-increment: step;
+        line-height: 30px;
+        font-size: 14px;
+        border: 1px solid #f4f4f4;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    }
+
+    li.tt-step:not(:first-child)::after {
+      width: 100%;
+      height: 4px;
+      content: "";
+      position: absolute;
+      background-color: #f4f4f4;
+      top: 13px;
+      left: -50%;
+      z-index: -1;
+    }
+
+    li.tt-step.tt-step-done {
+      color: #22c55e;
+
+      &:before {
+        border-color: #22c55e;
+        background-color: #22c55e;
+        color: #fff;
+        content: "";
+        font-family: "FontAwesome";
+      }
+    }
+
+    li.tt-step.tt-step-done+li:after {
+      background-color: #22c55e;
+    }
+
+    li.tt-step.active {
+      color: #22c55e;
+
+      &:before {
+        border-color: #22c55e;
+        color: #22c55e;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .header-form {
+    width: 80%;
+    margin-bottom: 30px;
+
+    .input-field {
+      width: 90%;
+    }
+
+    .search {
+
+      cursor: pointer;
+      width: 10%;
+      background-color: #E55604;
+      border-radius: 0 5px 5px 0;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
