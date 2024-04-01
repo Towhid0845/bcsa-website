@@ -85,14 +85,14 @@
     }
   }
 
-  .address-book-content.border-right::before {
+  .about-sec.border-right::before {
     content: "";
     position: absolute;
     right: 0;
     bottom: 0;
     width: 1px;
     height: 100%;
-    background-color: rgba(233, 233, 233, .4);
+    background-color: rgba(233, 233, 233, 0.791);
   }
 
   .address-book-content {
@@ -126,8 +126,6 @@
   }
 
   .payments-list-table tr {
-    th {}
-
 
     td {
 

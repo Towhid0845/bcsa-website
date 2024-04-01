@@ -12,12 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="fontawsome/css/all.min.css">
   <link rel="stylesheet" href="fontawsome/css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/plyr.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/pignose.calendar.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/nice-select.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -161,237 +157,62 @@
   </nav>
   <!-- navbar part end -->
 
-  <!-- breadcrumb part start -->
-  <section class="bread-crumb" style="background: url(images/breadcrumb.png);">
-    <div class="overlay">
-      <div class="container">
-        <div class="text text-center">
-          <h3>Client List</h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            </li>
-            <li>Client List</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- breadcrumb part end -->
-
-  <!-- content page start -->
-  <section class="content-page">
+  <!-- signup -->
+  <section class="login-section py-5">
     <div class="container">
-      <div class="content-main">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1> About </h1>
-            <div class="content-box">
-              <div class="image small-image">
-                <img src="./images/bc-8.png" alt="not found" class="img-fluid w-100">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-12 login-img shadow" style="background-image: url(./images/cr6.jpg);"></div>
+
+        <div class="col-lg-5 col-12 bg-white d-flex p-0 shadow">
+          <form class="login-form-wrap px-4 py-5 w-100">
+            <div class="text-center mb-4">
+              <a href="index.php"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <h4 class="mb-3 text-center">Get started absolutely free</h4>
+            <p class="fs-xs mb-1">Already have an account? <a href="member-login.html" class="text-secondary">Sign
+                in</a></p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <input type="text" placeholder="First name" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <input type="text" placeholder="Last name" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="input-field">
+                  <input type="email" placeholder="Email address" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="input-field check-password">
+                  <input type="password" placeholder="Password" class="auth-input">
+                  <span class="eye eye-icon"><i class="fa-solid fa-eye"></i></span>
+                  <span class="eye eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
               </div>
             </div>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab dolores quas inventore sint,
-              aperiam mollitia dolorem tenetur corporis? Et id tempora quis in deleniti? Voluptatibus veniam itaque
-              voluptates corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, esse. Tempore,
-              voluptates adipisci voluptatum asperiores, alias repellat totam ut quod similique minus fuga vero eius
-              neque provident, magni quaerat. Placeat.
-            </p>
-
-            <p>It has completed a number of high-profile projects, including the following:</p>
-
-            <ul>
-              <li>Noman Group</li>
-              <li>Akij Group</li>
-              <li>Karim Textile Ltd</li>
-            </ul>
-
-            <blockquote>
-              <h4>Masud Steel Design BD Ltd. is a member of the Bangladesh Steel Manufacturers Association (BSMA). The
-                company is also ISO 9001:2015 certified.
-              </h4>
-            </blockquote>
-
-            <p>Here are some of the company's core values:</p>
-            <table>
-              <tbody>
-                <tr>
-                  <th>Quality&nbsp;:</th>
-                  <td>Masud Steel Design BD Ltd. is committed to providing high-quality steel construction services.
-                  </td>
-                </tr>
-                <tr>
-                  <th>Integrity&nbsp;:</th>
-                  <td>The company believes in honesty and transparency in all its dealings with its clients.</td>
-                </tr>
-                <tr>
-                  <th>Safety&nbsp;:</th>
-                  <td>The company is committed to providing a safe working environment for its employees and clients.
-                  </td>
-                </tr>
-                <tr>
-                  <th>Customer satisfaction&nbsp;:</th>
-                  <td>The company's goal is to exceed the expectations of its clients.</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p>This is an ordered list:</p>
-            <ol>
-              <li>Noman Group</li>
-              <li>Akij Group</li>
-              <li>Karim Textile Ltd</li>
-            </ol>
-
-            <!-- <div class="note">
-              <p>If you are looking for a reliable and experienced steel construction company in Bangladesh, Masud
-                Steel Design BD Ltd. is a good option to consider</p>
+            <div class="row g-4 mt-4">
+              <div class="col-sm-6">
+                <button type="submit" class="create-btn w-100">Sign Up</button>
+              </div>
+              <div class="col-sm-6">
+                <a href="#" class="google-btn w-100"><img src="./images/google.png" alt="google" class="me-2">Sign Up
+                  with
+                  Google</a>
+              </div>
             </div>
-
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <p class="content-background-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              consequuntur!
-            </p>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <p class="content-border-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, consequuntur!
-            </p>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <p class="content-after-border-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              consequuntur!
-            </p>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <p class="content-border-dash-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              consequuntur!
-            </p>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <p class="content-border-dots-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              consequuntur!
-            </p>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <ul class="content-ul">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, fugiat.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, totam? Distinctio quidem, alias est
-                quasi modi provident non delectus id, pariatur nam quae, asperiores eveniet quibusdam obcaecati quam?
-                Accusamus illo cumque ipsa hic modi corporis deleniti ipsam assumenda maiores deserunt.</li>
-            </ul>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <ol class="content-ul">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, fugiat.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, totam? Distinctio quidem, alias est
-                quasi modi provident non delectus id, pariatur nam quae, asperiores eveniet quibusdam obcaecati quam?
-                Accusamus illo cumque ipsa hic modi corporis deleniti ipsam assumenda maiores deserunt.</li>
-            </ol>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <ul class="custom-content-ul">
-              <li>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit, amet
-                consectetur
-                adipisicing.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor, sit amet
-                consectetur
-                adipisicing elit. Et, fugiat.</li>
-              <li>Lorem ipsum dolor sit amet
-                consectetur,
-                adipisicing elit. Sed, totam? Distinctio quidem, alias est
-                quasi modi provident non delectus id, pariatur nam quae, asperiores eveniet quibusdam obcaecati quam?
-                Accusamus illo cumque ipsa hic modi corporis deleniti ipsam assumenda maiores deserunt.</li>
-            </ul>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <ul class="custom-ul-inline-style">
-              <li>Current Opening</li>
-              <li>History</li>
-              <li>Recent History</li>
-              <li>Places</li>
-              <li>Current Option</li>
-              <li>Travels</li>
-              <li>Current Opening</li>
-              <li>History</li>
-              <li>Recent History</li>
-              <li>Places</li>
-              <li>Current Option</li>
-              <li>Travels</li>
-            </ul>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <ul class="custom-ul-block-style">
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odio!</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odio!</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odio!</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odio!</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odio!</li>
-            </ul>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <div class="content-table table-responsive">
-              <table class="table table-bordered">
-                <thead class="bg-dark text-white">
-                  <tr>
-                    <th>#</th>
-                    <th>Title</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01</td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus.</td>
-                    <td>
-                      <button class="action"><i class="fas fa-file-pdf"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
-          </div>
+            <p class="mb-0 fs-xs mt-4 text-center">By signing up, I agree to <a href="#" class="text-dark">Terms of Use
+                and Privacy Policy</a></p>
+          </form>
         </div>
       </div>
     </div>
   </section>
-  <!-- content page end -->
+  <!-- signup -->
 
   <!-- footer part start -->
   <footer>
@@ -468,16 +289,14 @@
   <!-- footer part end -->
 
   <!-- all js link -->
+  <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/plyr.js"></script>
-  <script src="js/jquery.countTo.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/pignose.calendar.full.min.js"></script>
-  <script src="js/slick-animation.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <script src="js/jquery.nice-select.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

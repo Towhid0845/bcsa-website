@@ -142,6 +142,10 @@ body {
   border-radius: 6px;
 }
 
+button {
+  border: none;
+}
+
 .nice-select {
   font-size: 16px;
   height: 50px;
@@ -3325,14 +3329,14 @@ form .billing-section textarea:focus {
 .user-deshboard .account-nav .account-nav-menu li a.active {
   color: #FFC107;
 }
-.user-deshboard .address-book-content.border-right::before {
+.user-deshboard .about-sec.border-right::before {
   content: "";
   position: absolute;
   right: 0;
   bottom: 0;
   width: 1px;
   height: 100%;
-  background-color: rgba(233, 233, 233, 0.4);
+  background-color: rgba(233, 233, 233, 0.791);
 }
 .user-deshboard .address-book-content a {
   color: #FFC107;
@@ -3488,6 +3492,87 @@ form .billing-section textarea:focus {
 .user-deshboard .header-form .search img {
   width: 20px;
   height: 20px;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f2f2f2;
+}
+.login-section .login-img {
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login-section .login-form-wrap a {
+  color: #FFC107;
+}
+.login-section .login-form-wrap img {
+  width: 100px;
+}
+.login-section .login-form-wrap h4 span {
+  color: #FFC107;
+}
+.login-section .login-form-wrap .fs-xs a {
+  color: #FFC107 !important;
+}
+.login-section .login-form-wrap .auth-input {
+  padding: 15px 24px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  width: 100%;
+}
+.login-section .login-form-wrap .auth-input:hover {
+  border-color: #FFC107;
+}
+.login-section .login-form-wrap .auth-input::placeholder {
+  color: rgba(93, 99, 116, 0.5);
+}
+.login-section .login-form-wrap .check-password {
+  position: relative;
+}
+.login-section .login-form-wrap .check-password .eye {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.login-section .login-form-wrap .create-btn {
+  color: #ffffff;
+  background-color: #1D272F;
+  border-color: #1D272F;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+}
+.login-section .login-form-wrap .create-btn:hover {
+  background-color: #FFC107;
+}
+.login-section .login-form-wrap .google-btn {
+  color: #1D272F;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  padding: 15px 0;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+}
+.login-section .login-form-wrap .google-btn img {
+  width: 25px;
+  height: 25px;
+}
+.login-section .login-form-wrap .google-btn:hover {
+  border-color: #FFC107;
 }
 
 /*# sourceMappingURL=style.css.map */
