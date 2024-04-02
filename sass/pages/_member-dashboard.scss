@@ -33,9 +33,16 @@
     }
 
     .profile-inf-right {
-      .achievement-box {
+      .profile-achievements {
 
         margin-left: 48px;
+      }
+
+      .achievement-box {
+        border: 1px solid $themeColor;
+        padding: 5px 20px;
+        border-radius: 10px;
+
         margin-bottom: 10px;
 
         .icon {
@@ -60,11 +67,50 @@
         .icon.bg-color-4 {
           background-color: #f2e8ff;
         }
+
+        span img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .cmn-label1 {
+          color: #00b75b;
+        }
+
+        .cmn-label2 {
+          color: #ffad09;
+        }
+
+        .cmn-label3 {
+          color: #00a2e7;
+        }
+
+        .cmn-label4 {
+          color: #872aff;
+        }
       }
     }
   }
 
+  .tab-content {
+    .achievement-box {
+
+      span img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+
+  .info-meta span img {
+    width: 25px;
+    height: 25px;
+  }
+
   .account-nav {
+    position: sticky;
+    top: 100px;
 
     ul {
       li {
@@ -289,5 +335,10 @@
         height: 20px;
       }
     }
+  }
+
+
+  .event-part {
+    margin-top: -80px;
   }
 }

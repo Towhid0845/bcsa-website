@@ -3296,8 +3296,13 @@ form .billing-section textarea:focus {
   height: 100%;
   object-fit: cover;
 }
-.user-deshboard .account-info .profile-inf-right .achievement-box {
+.user-deshboard .account-info .profile-inf-right .profile-achievements {
   margin-left: 48px;
+}
+.user-deshboard .account-info .profile-inf-right .achievement-box {
+  border: 1px solid #FFC107;
+  padding: 5px 20px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 .user-deshboard .account-info .profile-inf-right .achievement-box .icon {
@@ -3317,6 +3322,34 @@ form .billing-section textarea:focus {
 }
 .user-deshboard .account-info .profile-inf-right .achievement-box .icon.bg-color-4 {
   background-color: #f2e8ff;
+}
+.user-deshboard .account-info .profile-inf-right .achievement-box span img {
+  width: 80px;
+  height: 80px;
+}
+.user-deshboard .account-info .profile-inf-right .achievement-box .cmn-label1 {
+  color: #00b75b;
+}
+.user-deshboard .account-info .profile-inf-right .achievement-box .cmn-label2 {
+  color: #ffad09;
+}
+.user-deshboard .account-info .profile-inf-right .achievement-box .cmn-label3 {
+  color: #00a2e7;
+}
+.user-deshboard .account-info .profile-inf-right .achievement-box .cmn-label4 {
+  color: #872aff;
+}
+.user-deshboard .tab-content .achievement-box span img {
+  width: 60px;
+  height: 60px;
+}
+.user-deshboard .info-meta span img {
+  width: 25px;
+  height: 25px;
+}
+.user-deshboard .account-nav {
+  position: sticky;
+  top: 100px;
 }
 .user-deshboard .account-nav ul li img {
   width: 14px;
@@ -3492,6 +3525,9 @@ form .billing-section textarea:focus {
 .user-deshboard .header-form .search img {
   width: 20px;
   height: 20px;
+}
+.user-deshboard .event-part {
+  margin-top: -80px;
 }
 
 .login-section {
