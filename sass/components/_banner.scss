@@ -7,7 +7,8 @@
     background-size: cover !important;
     background-position: center center !important;
     padding: 20px 0;
-    min-height: 708px;
+    // min-height: 708px;
+    height: calc(100vh - 203px);
 
     .text {
       h2 {
