@@ -151,6 +151,39 @@
 
   // content page end
 
+  // list page css start
+  .member-list .member-item .image {
+    height: 240px;
+  }
+
+  .member-list .member-item .text {
+    padding: 20px;
+  }
+
+  .news-list .news-items .news-image {
+    height: 240px;
+  }
+
+  .news-list .news-items .news-text .info {
+    padding: 25px;
+    height: 277px;
+
+    .title {
+      font-size: 22px;
+    }
+  }
+
+  .products-item .text p {
+    margin: 10px 0 20px 0;
+    padding-bottom: 10px;
+  }
+
+  .gshop-sidebar {
+    width: 261px;
+  }
+
+  // list page css end
+
   // footer part start
 
   footer .footer-bg .links {
@@ -281,6 +314,34 @@
   }
 
   // content page end
+
+  // list page css start
+  .member-list .member-item .image {
+    height: 260px;
+  }
+
+  .member-list .search-top .title h2 {
+    font-size: 24px;
+  }
+
+  .news-list .news-items .news-image {
+    height: 200px;
+  }
+
+  .news-list .news-items .news-text .info .title {
+    font-size: 20px;
+  }
+
+  .news-list .news-items .news-text .info {
+    padding: 22px;
+    height: 259px;
+  }
+
+  .gshop-sidebar {
+    width: 306px;
+  }
+
+  // list page css end
 }
 
 @media (max-width:991.98px) {
@@ -363,6 +424,21 @@
   }
 
   // content page end
+
+  // list page css start
+  .member-list .member-item .image {
+    height: 280px;
+  }
+
+  .member-list .search-top .title h2 {
+    font-size: 22px;
+  }
+
+  .news-list .news-items .news-image {
+    height: 225px;
+  }
+
+  // list page css end
 
   // footer
   footer .footer-bg .links {
@@ -470,6 +546,39 @@
 
   // content page end
 
+  // list page css start
+  .member-list .member-item .image {
+    height: 220px;
+  }
+
+  .member-list .member-item .text {
+    padding: 16px;
+  }
+
+  .member-list .member-item .text a {
+    font-size: 18px;
+  }
+
+  .member-list .search-top .title h2 {
+    font-size: 20px;
+  }
+
+  .news-list .news-items .news-image {
+    height: 175px;
+  }
+
+  .news-list .news-items .news-text .info .title {
+    font-size: 18px;
+  }
+
+  .news-list .news-items .news-text .info {
+    padding: 20px;
+    height: 250px;
+  }
+
+  // list page css end
+
+
   // footer
   footer .footer-bg .footer-title {
     font-size: 18px;
@@ -558,6 +667,21 @@
   }
 
   // home page end
+
+  // list page css start
+  .member-list .member-item .image {
+    height: 280px;
+  }
+
+  .member-list .search-top .title h2 {
+    font-size: 18px;
+  }
+
+  .news-list .news-items .news-image {
+    height: 240px;
+  }
+
+  // list page css end
 
   // content page start
   .content-page .content-main {
