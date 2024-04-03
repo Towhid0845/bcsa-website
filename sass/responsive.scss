@@ -1,6 +1,15 @@
-@media (min-width:1400px) {}
+@media (max-width:1599.98px) {
 
-@media (max-width:1399px) {
+  .bread-crumb .overlay .text {
+    padding: 50px 0;
+
+    h3 {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width:1399.98px) {
 
   // common css part start
   .about,
@@ -19,8 +28,32 @@
     font-size: 15px;
   }
 
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 60px 0;
+  }
+
   // common css part end
-  // top header part start
+
+  // breadcrumb part start
+  .bread-crumb .overlay .text {
+    padding: 42px 0;
+
+    h3 {
+      font-size: 45px;
+    }
+  }
+
+  // breadcrumb part end
+
+  // home page start
   header .header-info {
     padding-left: 55px;
   }
@@ -29,8 +62,6 @@
     font-size: 15px;
   }
 
-  // top header part end
-  // header part start
   header {
     padding: 0;
   }
@@ -39,8 +70,6 @@
     font-size: 14px;
   }
 
-  // header part end
-  // navbar part strt
   nav ul li a {
     font-size: 13px !important;
     padding: 9px 12px !important;
@@ -61,8 +90,6 @@
     font-size: 13px;
   }
 
-  // navbar part end
-  // banner part start
   .banner .banner-slider {
     height: calc(100vh - 194px);
   }
@@ -71,14 +98,10 @@
     font-size: 44px;
   }
 
-  // banner part end
-  // service part start
   .product-item .text h4 {
     font-size: 18px;
   }
 
-  // service part end
-  // about part start
   .about .about-bg .about-info {
     max-width: 556px;
     padding-left: 20px;
@@ -106,26 +129,36 @@
     font-size: 26px;
   }
 
-  // about part end
-  // ceo part start
-  .ceo-messages .msg-bg .text {
-    width: 663px;
+  .contact-map .map-container .contact-form {
+    width: 500px;
   }
 
-  // ceo part end
+  .contact-map .map-container .contact-form button {
+    padding: 10px 20px;
+  }
+
+  // home page end
+
+  // content page start
+
+  .content-page .content-main h1 {
+    font-size: 30px;
+  }
+
+  .content-page .content-main blockquote h4 {
+    font-size: 22px;
+  }
+
+  // content page end
+
   // footer part start
 
   footer .footer-bg .links {
-    margin-left: 1rem !important;
+    margin-left: 1rem;
   }
 
   footer .footer-bg .links ul li a {
     font-size: 15px;
-  }
-
-  footer .footer-bg .getin-touch {
-    width: 283px;
-    margin-left: -34px;
   }
 
   footer .footer-bg {
@@ -158,39 +191,378 @@
     padding: 5px 10px;
   }
 
-  // banner 
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 50px 0;
+  }
+
+  // common part end
+
+  // breadcumb part start
+  .bread-crumb .overlay .text {
+    padding: 30px 0;
+
+    h3 {
+      font-size: 42px;
+    }
+  }
+
+  // breadcrumb part end
+
+  // home page start
   .banner .banner-slider {
     height: 440px;
   }
 
-  // about
   .about .about-info {
     padding: 20px 0;
     padding-left: 20px;
   }
 
-  // event
   .event-part .event-box .event-item .image {
     width: 240px;
-    height: 161px;
+    height: 180px;
   }
 
   .event-part .event-box .event-item .text {
-    height: 161px;
-    padding: 10px 20px;
+    // height: 161px;
+    padding: 16px 20px;
   }
+
+  .news-item .image {
+    height: 200px;
+  }
+
+  .contact-map .map-container .contact-form {
+    width: 400px;
+
+    .title-snd {
+      padding-bottom: 25px;
+    }
+
+    .form-textarea {
+      height: 95px;
+    }
+  }
+
+  .contact-map .map-container .contact-form {
+    padding: 22px;
+  }
+
+  // home page end
+
+  // content page start
+  .content-page .content-main h1 {
+    font-size: 28px;
+  }
+
+  .content-page .content-main blockquote h4 {
+    font-size: 20px;
+  }
+
+  .content-page .content-main blockquote {
+    padding: 20px 20px 20px 40px;
+  }
+
+  .content-page .content-main table {
+    margin-left: 0;
+
+    th,
+    td {
+      padding-bottom: 20px;
+    }
+  }
+
+  // content page end
 }
 
 @media (max-width:991.98px) {
+
+  // common css part start
+  .about,
+  .event-part,
+  .products,
+  .news,
+  .contact-map,
+  footer .footer-bg {
+    padding-top: 50px;
+  }
+
+  .title-snd {
+    padding-bottom: 35px;
+  }
+
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 40px 0;
+  }
+
+  // common css end
+
+  // breadcrub css start
+  .bread-crumb {
+    background-position: left !important;
+  }
+
+  .bread-crumb .overlay .text h3 {
+    font-size: 40px;
+  }
+
+  // breadcrub css end
+
+  // home page start
   .banner .banner-slider {
     height: 340px;
+  }
+
+  .about .about-info {
+    padding-left: 0;
+  }
+
+  .products .product-bg {
+    padding: 50px 0;
+  }
+
+  .news-item .text .title {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .news-item .image .date span {
+    font-size: 15px;
+    width: 60px;
+    height: 60px;
+    padding: 13px;
+    line-height: 15px;
+  }
+
+  // home page end
+
+  // content page start
+  .content-page .content-main h1 {
+    font-size: 26px;
+  }
+
+  .content-page .content-main {
+    padding: 30px;
+  }
+
+  // content page end
+
+  // footer
+  footer .footer-bg .links {
+    margin-left: 0;
   }
 }
 
 @media (max-width:767.98px) {
+
+  // common css part start
+  .about,
+  .event-part,
+  .products,
+  .news,
+  .contact-map,
+  footer .footer-bg {
+    padding-top: 40px;
+  }
+
+  .title-snd h3 {
+    font-size: 24px;
+  }
+
+  .title-snd {
+    padding-bottom: 25px;
+  }
+
+  .common-btn a {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 30px 0;
+  }
+
+  // common part end
+
+  // breadcrumb part start
+  .bread-crumb .overlay .text {
+    padding-left: 50px;
+
+    h3 {
+      font-size: 35px;
+    }
+  }
+
+  // breadcrumb part end
+
+  // home page start
   .banner .icon {
     top: 85%;
   }
+
+  .about .about-image {
+    height: 290px;
+  }
+
+  .event-part .event-box .event-item .text {
+    padding: 12px 20px;
+  }
+
+  .event-part .event-box .event-item .text span {
+    margin: 10px 0 16px 0;
+  }
+
+  .event-part .event-box .event-item .text .title {
+    font-size: 18px;
+  }
+
+  .products .product-bg {
+    padding: 40px 0;
+  }
+
+  .news-item .image {
+    height: 310px;
+  }
+
+  // home page end
+
+  // content page start
+  .content-page .content-main h1 {
+    font-size: 24px;
+  }
+
+  .content-page .content-main blockquote h4 {
+    font-size: 18px;
+  }
+
+  .content-page .content-main blockquote {
+    padding: 20px;
+  }
+
+  .content-page .content-main table tr th {
+    min-width: 110px;
+  }
+
+  // content page end
+
+  // footer
+  footer .footer-bg .footer-title {
+    font-size: 18px;
+  }
+
+  footer .footer-bg .footer-btm {
+    margin-top: 25px;
+  }
+
+  footer .footer-bg .footer-btm p {
+    text-align: center;
+  }
 }
 
-@media (max-width:575.98px) {}
+@media (max-width:575.98px) {
+
+  // common css part start
+  .about,
+  .event-part,
+  .products,
+  .news,
+  .contact-map {
+    padding-top: 30px;
+  }
+
+  .title-snd h3 {
+    font-size: 22px;
+  }
+
+  .title-snd h5 {
+    font-size: 16px;
+  }
+
+  // common part end
+
+  // breadcrumb part start
+  .bread-crumb {
+    background-position: center !important;
+  }
+
+  .bread-crumb .overlay .text {
+    padding-left: 0;
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  // breadcrumb part end
+
+
+  // home page start
+  .top-header .social a {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  .about .about-image {
+    height: 200px;
+  }
+
+  .event-part .event-box .event-item .image {
+    width: 100%;
+    height: 240px;
+  }
+
+  .event-part .event-box .event-item .text {
+    width: 100%;
+    // height: 240px;
+  }
+
+  .event-part .event-box .event-item .text {
+    padding: 24px;
+  }
+
+  .products .product-bg {
+    padding: 30px 0;
+  }
+
+  .news-item .image {
+    height: 230px;
+  }
+
+  .contact-map .map-container .contact-form {
+    width: 350px;
+  }
+
+  // home page end
+
+  // content page start
+  .content-page .content-main {
+    padding: 20px;
+  }
+
+  // content page end
+}

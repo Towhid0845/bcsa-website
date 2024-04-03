@@ -1,4 +1,12 @@
-@media (max-width: 1399px) {
+@media (max-width: 1599.98px) {
+  .bread-crumb .overlay .text {
+    padding: 50px 0;
+  }
+  .bread-crumb .overlay .text h3 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1399.98px) {
   .about,
   .event-part,
   .products,
@@ -11,6 +19,23 @@
   }
   p {
     font-size: 15px;
+  }
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 60px 0;
+  }
+  .bread-crumb .overlay .text {
+    padding: 42px 0;
+  }
+  .bread-crumb .overlay .text h3 {
+    font-size: 45px;
   }
   header .header-info {
     padding-left: 55px;
@@ -70,18 +95,23 @@
   .about .about-bg .about-info ul li h4 {
     font-size: 26px;
   }
-  .ceo-messages .msg-bg .text {
-    width: 663px;
+  .contact-map .map-container .contact-form {
+    width: 500px;
+  }
+  .contact-map .map-container .contact-form button {
+    padding: 10px 20px;
+  }
+  .content-page .content-main h1 {
+    font-size: 30px;
+  }
+  .content-page .content-main blockquote h4 {
+    font-size: 22px;
   }
   footer .footer-bg .links {
-    margin-left: 1rem !important;
+    margin-left: 1rem;
   }
   footer .footer-bg .links ul li a {
     font-size: 15px;
-  }
-  footer .footer-bg .getin-touch {
-    width: 283px;
-    margin-left: -34px;
   }
   footer .footer-bg {
     padding: 60px 0 0px 0;
@@ -104,6 +134,23 @@
   .read-more {
     padding: 5px 10px;
   }
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 50px 0;
+  }
+  .bread-crumb .overlay .text {
+    padding: 30px 0;
+  }
+  .bread-crumb .overlay .text h3 {
+    font-size: 42px;
+  }
   .banner .banner-slider {
     height: 440px;
   }
@@ -113,21 +160,233 @@
   }
   .event-part .event-box .event-item .image {
     width: 240px;
-    height: 161px;
+    height: 180px;
   }
   .event-part .event-box .event-item .text {
-    height: 161px;
-    padding: 10px 20px;
+    padding: 16px 20px;
+  }
+  .news-item .image {
+    height: 200px;
+  }
+  .contact-map .map-container .contact-form {
+    width: 400px;
+  }
+  .contact-map .map-container .contact-form .title-snd {
+    padding-bottom: 25px;
+  }
+  .contact-map .map-container .contact-form .form-textarea {
+    height: 95px;
+  }
+  .contact-map .map-container .contact-form {
+    padding: 22px;
+  }
+  .content-page .content-main h1 {
+    font-size: 28px;
+  }
+  .content-page .content-main blockquote h4 {
+    font-size: 20px;
+  }
+  .content-page .content-main blockquote {
+    padding: 20px 20px 20px 40px;
+  }
+  .content-page .content-main table {
+    margin-left: 0;
+  }
+  .content-page .content-main table th,
+  .content-page .content-main table td {
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 991.98px) {
+  .about,
+  .event-part,
+  .products,
+  .news,
+  .contact-map,
+  footer .footer-bg {
+    padding-top: 50px;
+  }
+  .title-snd {
+    padding-bottom: 35px;
+  }
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 40px 0;
+  }
+  .bread-crumb {
+    background-position: left !important;
+  }
+  .bread-crumb .overlay .text h3 {
+    font-size: 40px;
+  }
   .banner .banner-slider {
     height: 340px;
   }
+  .about .about-info {
+    padding-left: 0;
+  }
+  .products .product-bg {
+    padding: 50px 0;
+  }
+  .news-item .text .title {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+  .news-item .image .date span {
+    font-size: 15px;
+    width: 60px;
+    height: 60px;
+    padding: 13px;
+    line-height: 15px;
+  }
+  .content-page .content-main h1 {
+    font-size: 26px;
+  }
+  .content-page .content-main {
+    padding: 30px;
+  }
+  footer .footer-bg .links {
+    margin-left: 0;
+  }
 }
 @media (max-width: 767.98px) {
+  .about,
+  .event-part,
+  .products,
+  .news,
+  .contact-map,
+  footer .footer-bg {
+    padding-top: 40px;
+  }
+  .title-snd h3 {
+    font-size: 24px;
+  }
+  .title-snd {
+    padding-bottom: 25px;
+  }
+  .common-btn a {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+  .content-page,
+  .contact-page,
+  .member-list,
+  .news-list,
+  .event-list,
+  .partner-list,
+  .album,
+  .photo,
+  .gallery {
+    padding: 30px 0;
+  }
+  .bread-crumb .overlay .text {
+    padding-left: 50px;
+  }
+  .bread-crumb .overlay .text h3 {
+    font-size: 35px;
+  }
   .banner .icon {
     top: 85%;
+  }
+  .about .about-image {
+    height: 290px;
+  }
+  .event-part .event-box .event-item .text {
+    padding: 12px 20px;
+  }
+  .event-part .event-box .event-item .text span {
+    margin: 10px 0 16px 0;
+  }
+  .event-part .event-box .event-item .text .title {
+    font-size: 18px;
+  }
+  .products .product-bg {
+    padding: 40px 0;
+  }
+  .news-item .image {
+    height: 310px;
+  }
+  .content-page .content-main h1 {
+    font-size: 24px;
+  }
+  .content-page .content-main blockquote h4 {
+    font-size: 18px;
+  }
+  .content-page .content-main blockquote {
+    padding: 20px;
+  }
+  .content-page .content-main table tr th {
+    min-width: 110px;
+  }
+  footer .footer-bg .footer-title {
+    font-size: 18px;
+  }
+  footer .footer-bg .footer-btm {
+    margin-top: 25px;
+  }
+  footer .footer-bg .footer-btm p {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .about,
+  .event-part,
+  .products,
+  .news,
+  .contact-map {
+    padding-top: 30px;
+  }
+  .title-snd h3 {
+    font-size: 22px;
+  }
+  .title-snd h5 {
+    font-size: 16px;
+  }
+  .bread-crumb {
+    background-position: center !important;
+  }
+  .bread-crumb .overlay .text {
+    padding-left: 0;
+  }
+  .bread-crumb .overlay .text h3 {
+    font-size: 30px;
+  }
+  .top-header .social a {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  .about .about-image {
+    height: 200px;
+  }
+  .event-part .event-box .event-item .image {
+    width: 100%;
+    height: 240px;
+  }
+  .event-part .event-box .event-item .text {
+    width: 100%;
+  }
+  .event-part .event-box .event-item .text {
+    padding: 24px;
+  }
+  .products .product-bg {
+    padding: 30px 0;
+  }
+  .news-item .image {
+    height: 230px;
+  }
+  .contact-map .map-container .contact-form {
+    width: 350px;
+  }
+  .content-page .content-main {
+    padding: 20px;
   }
 }
 

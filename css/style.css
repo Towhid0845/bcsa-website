@@ -519,9 +519,9 @@ nav ul li:hover > ul {
 }
 
 .mobile-menu .mobile-topbar .icon i:hover {
-  background-color: #e41b2e;
+  background-color: #FFC107;
   color: #ffffff;
-  border-color: #e41b2e;
+  border-color: #FFC107;
 }
 
 .mobile-menu .mobile-menu-overlay {
@@ -559,7 +559,7 @@ nav ul li:hover > ul {
 }
 
 .mobile-menu .mobile-menu-main .close-m-menu i:hover {
-  background-color: #e41b2e;
+  background-color: #FFC107;
 }
 
 .mobile-menu .mobile-menu-main .menu-body {
@@ -590,7 +590,7 @@ nav ul li:hover > ul {
 .mobile-menu .mobile-menu-main .menu-body .action ul li sup {
   width: 25px;
   height: 25px;
-  background-color: #e41b2e;
+  background-color: #FFC107;
   border-radius: 50%;
   text-align: center;
   line-height: 25px;
@@ -617,7 +617,7 @@ nav ul li:hover > ul {
 }
 
 .mobile-menu .mobile-menu-main .menu-body .search input:focus {
-  border-color: #e41b2e;
+  border-color: #FFC107;
 }
 
 .mobile-menu .mobile-menu-main .menu-body .search button {
@@ -644,7 +644,7 @@ nav ul li:hover > ul {
 }
 
 .mobile-menu .mobile-menu-main .menu-body .menu-list ul li a:hover {
-  color: #e41b2e;
+  color: #FFC107;
 }
 
 .mobile-menu .mobile-menu-main .menu-body .menu-list ul li a i {
@@ -657,7 +657,7 @@ nav ul li:hover > ul {
 }
 
 .mobile-menu .mobile-menu-main .menu-body .menu-list ul li a:hover i {
-  background-color: #e41b2e;
+  background-color: #FFC107;
   color: #ffffff;
 }
 
@@ -985,9 +985,8 @@ nav ul li:hover > ul {
   background-color: #ebf4fb;
 }
 .event-part .event-box .event-item .image {
-  width: 368px;
+  width: 40%;
   height: 246px;
-  margin-right: 24px;
   position: relative;
 }
 .event-part .event-box .event-item .image::before {
@@ -1007,6 +1006,7 @@ nav ul li:hover > ul {
   object-position: center;
 }
 .event-part .event-box .event-item .text {
+  width: 60%;
   padding: 24px;
   padding-top: 40px;
 }
@@ -1205,7 +1205,7 @@ nav ul li:hover > ul {
   width: 570px;
   background-color: #ffffff;
   position: absolute;
-  top: 50%;
+  top: 54%;
   transform: translateY(-50%);
 }
 .contact-map .map-container .contact-form .form-control {
@@ -1384,8 +1384,7 @@ footer .footer-bg .footer-btm a {
 }
 
 .content-page {
-  padding-top: 60px;
-  margin-bottom: 60px;
+  padding: 60px 0;
 }
 .content-page .content-main {
   background-color: #f2f2f2;
@@ -1556,7 +1555,7 @@ footer .footer-bg .footer-btm a {
 }
 
 .event-list {
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 .event-list .event-calender {
   position: sticky;
@@ -1565,7 +1564,7 @@ footer .footer-bg .footer-btm a {
 }
 
 .shop-list {
-  padding: 20px 0 80px;
+  padding: 60px 0;
   background-color: #f2f2f2;
 }
 .shop-list .products-item {
@@ -1611,7 +1610,7 @@ footer .footer-bg .footer-btm a {
 }
 
 .member-list {
-  padding: 40px 0;
+  padding: 60px 0;
   background-color: #f2f2f2;
 }
 .member-list .search-top .title h2 {

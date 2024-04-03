@@ -20,9 +20,10 @@
       background-color: #ebf4fb;
 
       .image {
-        width: 368px;
+        // width: 368px;
+        width: 40%;
         height: 246px;
-        margin-right: 24px;
+        // margin-right: 24px;
         position: relative;
 
         &::before {
@@ -45,6 +46,7 @@
       }
 
       .text {
+        width: 60%;
         padding: 24px;
         padding-top: 40px;
 

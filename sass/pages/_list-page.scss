@@ -113,7 +113,7 @@
 
 // event list page
 .event-list {
-  padding-bottom: 80px;
+  padding: 80px 0;
 
   .event-calender {
     position: sticky;
@@ -124,7 +124,7 @@
 
 // shop list page
 .shop-list {
-  padding: 20px 0 80px;
+  padding: 60px 0;
   background-color: $bg;
 
   .products-item {
@@ -176,7 +176,7 @@
 
 // member list page
 .member-list {
-  padding: 40px 0;
+  padding: 60px 0;
   background-color: $bg;
 
   .search-top {
