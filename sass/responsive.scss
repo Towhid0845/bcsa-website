@@ -1,3 +1,5 @@
+@import "./mixin/line-limit";
+
 @media (max-width:1599.98px) {
 
   .bread-crumb .overlay .text {
@@ -16,6 +18,7 @@
   .event-part,
   .products,
   .news,
+  .contact-page .contact-form,
   .contact-map {
     padding-top: 70px;
   }
@@ -182,6 +185,31 @@
     width: 261px;
   }
 
+  .event-part .event-box .event-item .image {
+    height: 200px;
+  }
+
+  .event-part .event-box .event-item .text {
+    padding: 20px;
+  }
+
+  .partner-list .partner-item .image {
+    height: 120px;
+    padding: 0 16px;
+  }
+
+  .partner-list .partner-item {
+    padding-top: 16px;
+  }
+
+  .partner-list .partner-item .text {
+    padding: 16px;
+  }
+
+  .partner-list .partner-item .text .title {
+    font-size: 18px;
+  }
+
   // list page css end
 
   // footer part start
@@ -216,6 +244,7 @@
   .event-part,
   .products,
   .news,
+  .contact-page .contact-form,
   .contact-map {
     padding-top: 60px;
   }
@@ -260,7 +289,7 @@
   }
 
   .event-part .event-box .event-item .image {
-    width: 240px;
+    width: 275px;
     height: 180px;
   }
 
@@ -341,7 +370,30 @@
     width: 306px;
   }
 
+  .event-part .event-box .event-item .text .title {
+    font-size: 18px;
+  }
+
   // list page css end
+
+  // content page start
+  .contact-page .contact-box .contact-box-icon i {
+    font-size: 35px;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .contact-page .contact-box .contact-box-content .contact-box-title {
+    font-size: 26px;
+  }
+
+  .contact-page .contact-form .image {
+    height: 515px;
+  }
+
+  // content page end
 }
 
 @media (max-width:991.98px) {
@@ -352,6 +404,7 @@
   .products,
   .news,
   .contact-map,
+  .contact-page .contact-form,
   footer .footer-bg {
     padding-top: 50px;
   }
@@ -453,6 +506,7 @@
   .event-part,
   .products,
   .news,
+  .contact-page .contact-form,
   .contact-map,
   footer .footer-bg {
     padding-top: 40px;
@@ -515,6 +569,7 @@
 
   .event-part .event-box .event-item .text .title {
     font-size: 18px;
+    @include line(1);
   }
 
   .products .product-bg {
@@ -574,6 +629,19 @@
   .news-list .news-items .news-text .info {
     padding: 20px;
     height: 250px;
+  }
+
+  .main-filtering-option .filter {
+    width: 130px;
+  }
+
+  .event-part .event-box .event-item .image {
+    width: 40%;
+    height: 150px;
+  }
+
+  .gallery-item .image {
+    height: 180px;
   }
 
   // list page css end
@@ -681,11 +749,19 @@
     height: 240px;
   }
 
+  .gallery-item .image {
+    height: 300px;
+  }
+
   // list page css end
 
   // content page start
   .content-page .content-main {
     padding: 20px;
+  }
+
+  .contact-page .contact-box .contact-box-content .contact-box-title {
+    font-size: 24px;
   }
 
   // content page end

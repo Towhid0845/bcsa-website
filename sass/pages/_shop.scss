@@ -306,10 +306,96 @@
 //   transition: all 0.3s ease-in-out;
 // }
 
-.filter-icon {
+// .filter-icon {
+//   cursor: pointer;
+//   height: 30px;
+//   font-size: 18px;
+//   color: #222;
+//   font-weight: 600;
+// }
+
+
+.main-filtering-option .filter {
+  width: 100px;
   cursor: pointer;
   height: 30px;
   font-size: 18px;
   color: #222;
-  font-weight: 600;
 }
+
+.main-filtering-option .filter p {
+  line-height: 32px;
+  font-size: 18px;
+  line-height: 42px;
+}
+
+.mobile-filter-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, .6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0;
+  transition: all linear .3s;
+  visibility: hidden;
+}
+
+.mobile-filter {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  // left: 0;
+  background-color: #fff;
+  z-index: 9999;
+  left: -300px;
+  transition-duration: .5s;
+  overflow-y: scroll;
+}
+
+.show-mobile-filter-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.show-mobile-filter {
+  left: 0 !important;
+}
+
+.mobile-filter .header {
+  padding: 30px 20px 25px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.mobile-filter .header h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mobile-filter .header i {
+  font-size: 20px;
+  color: #FAB528;
+  cursor: pointer;
+}
+
+.sorting-main .nice-select {
+  height: 42px;
+  line-height: 38px;
+}
+
+// .sorting-main {
+//   width: 100%;
+//   padding-bottom: 50px;
+// }
+
+// .sorting-main ul {
+//   margin-right: 15px;
+//   margin-left: 20px;
+// }
+
+// .sorting-main ul li {
+//   display: inline-block;
+//   margin-left: 10px;
+// }
