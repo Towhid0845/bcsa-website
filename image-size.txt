@@ -1,0 +1,16 @@
+Image croping size:
+-------------------
+
+Banner: 1920px * 720px
+
+About: 696px * 450px
+
+Breadcrumb: 1920px * 250px
+
+Product detail Image: 900px * 716px
+
+Event detail & News detail: 856px * 591px
+
+Contact Us: 636px * 600px
+
+Login page: 550px * 600px
