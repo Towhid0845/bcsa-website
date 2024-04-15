@@ -23,7 +23,7 @@
   <section class="top-header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4 col-6">
           <div class="social">
             <a href="https://www.facebook.com/bcsa.tigers" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com/BCSA_Tigers" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
@@ -33,12 +33,12 @@
             <a href="https://www.instagram.com/cricket97bd/" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4 d-none d-md-block">
           <div class="info-link text-center">
             <a href="content-page.html">Member's Benefits(FAQ)</a>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4 col-6">
           <div class="info-link text-end">
             <a href="member-login.html">Member's Login</a>
           </div>
@@ -49,12 +49,13 @@
   <!-- top header part end -->
 
   <!-- header part start -->
-  <header>
-    <div class="container">
+  <header class="position-relative member-header">
+    <div class="container d-none d-xl-block">
       <div class="header-main d-flex justify-content-between">
         <div class="logo">
           <a href="index.html"><img src="images/logo.png" alt="" width="120"></a>
         </div>
+
         <div class="header-info">
           <div class="single-header-contact-info d-inline">
             <div class="icon-block">
@@ -78,6 +79,29 @@
               <a href="https://twitter.com/BCSA_Tigers" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="https://www.linkedin.com/company/cricket97bd/" target="_blank"><i
                   class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-xl-none position-absolute start-0 end-0 w-100">
+      <div class="row justify-content-center py-2">
+        <div class="col-12">
+          <div class="logo-wrapper w-100 d-flex align-items-center">
+            <div class="sm-logo me-auto">
+              <a href="index.html">
+                <img src="./images/logo-footer.png" alt="farooq">
+              </a>
+            </div>
+            <!-- <div class="search pe-4">
+                      <a href="search.html" class="bars">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </a>
+                    </div> -->
+            <div class="mobile-topbar ms-auto">
+              <div class="bars">
+                <i class="fas fa-bars"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -156,6 +180,62 @@
     </div>
   </nav>
   <!-- navbar part end -->
+
+  <!-- mobile navbar part start -->
+  <div class="mobile-menu d-xl-none">
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu-main">
+      <div class="close-m-menu text-end">
+
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="menu-body">
+        <div class="menu-list">
+          <ul class="list-unstyled">
+            <li class="mobile-sub-menu">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="mobile-sub-menu">
+              <a href="about.html">About Us</i></a>
+            </li>
+            <li class="mobile-sub-menu">
+              <a href="#">Membership<i class="fas fa-sort-down float-end"></i></a>
+              <ul class="list-unstyled">
+                <li><a href="member-list.html">All</a></li>
+                <li><a href="member-list.html">EC</a></li>
+                <li><a href="member-list.html">Lifetime</a></li>
+                <li><a href="member-list.html">General</a></li>
+                <li><a href="member-list.html">Associate</a></li>
+              </ul>
+            </li>
+            <li class="mobile-sub-menu">
+              <a href="#">News<i class="fas fa-sort-down float-end"></i></a>
+              <ul class="list-unstyled">
+                <li><a href="news-list.html">Bcsa</a></li>
+                <li><a href="https://cricket97.com/bn">cricket97</a></li>
+              </ul>
+            </li>
+            <li class="mobile-sub-menu"><a href="shop.html">Shop</a></li>
+            <li class="mobile-sub-menu">
+              <a href="#">Tours & Events<i class="fas fa-sort-down float-end"></i></a>
+              <ul class="list-unstyled">
+                <li><a href="event-list.html">Event Calender</a></li>
+                <li><a href="event-list.html">Archive</a></li>
+                <li><a href="photo-album.html">Photos</a></li>
+                <li><a href="video-album.html">Videos</a></li>
+              </ul>
+            </li>
+            <li class="mobile-sub-menu"><a href="partner-list.html">Partners</a></li>
+            <li class="mobile-sub-menu"><a href="https://cricket97.com/bn">cricket97</a></li>
+            <li class="mobile-sub-menu"><a href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile navbar part end -->
 
   <!-- invoice section start -->
   <section class="invoice-section pb-5">
@@ -292,8 +372,8 @@
     <div class="footer-bg">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="footer-about me-5">
+          <div class="col-lg-5 col-xl-4">
+            <div class="footer-about me-lg-5">
               <img src="images/logo-footer.png" alt="bcsa">
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis magni dicta quas nihil dignissimos
                 autem, officia expedita laborum dolor amet perspiciatis distinctio quae. Corporis ducimus eius in nobis
@@ -310,8 +390,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="getin-touch">
+          <div class="col-lg-4 col-xl-4">
+            <div class="getin-touch mt-4 mt-lg-0">
               <h4 class="footer-title">GET IN TOUCH</h4>
               <ul class="list-unstyled">
                 <li>
@@ -329,8 +409,8 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="links" style="margin-left: 100px;">
+          <div class="col-lg-3 col-xl-4">
+            <div class="links mt-4">
               <h4 class="footer-title">USEFUL LINKS</h4>
               <ul class="list-unstyled">
                 <li><a href="content-page.html">Terms of Use</a></li>
@@ -344,12 +424,12 @@
       <div class="footer-btm">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <div class="copyright">
                 <p>Copyright &copy; 2023 by <span>BCSA</span></p>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <div class="footer-menu text-end">
                 <p>Developed by <a href="">Nogor Solutions Limited</a></p>
               </div>

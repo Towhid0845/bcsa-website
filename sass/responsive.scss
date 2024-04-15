@@ -394,6 +394,22 @@
   }
 
   // content page end
+
+  // dashboard start
+  .user-deshboard .account-info .profile-inf-right .achievement-box {
+    min-height: 95px;
+  }
+
+  .profile-achievements .achievement-box {
+    width: 48%;
+  }
+
+  header.member-header {
+    background-color: #1D272F;
+    height: 60px;
+  }
+
+  // dashboard end
 }
 
 @media (max-width:991.98px) {
@@ -492,6 +508,31 @@
   }
 
   // list page css end
+
+  // checkout start
+  .prd-info-container {
+    .checkout-col {
+      width: 100% !important;
+    }
+  }
+
+  // checkout end
+
+  // dashboard start
+  .user-deshboard .account-info .profile-inf-right .profile-achievements {
+    margin-left: 0;
+  }
+
+  .user-deshboard .about-sec.border-right {
+    width: 100% !important;
+  }
+
+  .address-book-content .address {
+    width: 100% !important;
+  }
+
+
+  // dashboard end
 
   // footer
   footer .footer-bg .links {
@@ -646,6 +687,12 @@
 
   // list page css end
 
+  // dashboard start
+  .user-deshboard .account-info .profile-inf-right .achievement-box {
+    padding: 5px 10px;
+  }
+
+  // dashboard end
 
   // footer
   footer .footer-bg .footer-title {
@@ -754,6 +801,14 @@
   }
 
   // list page css end
+
+  // dashboard start
+  .user-deshboard .tab-content .achievement-box span img {
+    width: 50px;
+    height: 50px;
+  }
+
+  // dashboard end
 
   // content page start
   .content-page .content-main {

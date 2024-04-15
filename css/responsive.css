@@ -275,6 +275,16 @@
   .contact-page .contact-form .image {
     height: 515px;
   }
+  .user-deshboard .account-info .profile-inf-right .achievement-box {
+    min-height: 95px;
+  }
+  .profile-achievements .achievement-box {
+    width: 48%;
+  }
+  header.member-header {
+    background-color: #1D272F;
+    height: 60px;
+  }
 }
 @media (max-width: 991.98px) {
   .about,
@@ -341,6 +351,18 @@
   }
   .news-list .news-items .news-image {
     height: 225px;
+  }
+  .prd-info-container .checkout-col {
+    width: 100% !important;
+  }
+  .user-deshboard .account-info .profile-inf-right .profile-achievements {
+    margin-left: 0;
+  }
+  .user-deshboard .about-sec.border-right {
+    width: 100% !important;
+  }
+  .address-book-content .address {
+    width: 100% !important;
   }
   footer .footer-bg .links {
     margin-left: 0;
@@ -452,6 +474,9 @@
   .gallery-item .image {
     height: 180px;
   }
+  .user-deshboard .account-info .profile-inf-right .achievement-box {
+    padding: 5px 10px;
+  }
   footer .footer-bg .footer-title {
     font-size: 18px;
   }
@@ -522,6 +547,10 @@
   }
   .gallery-item .image {
     height: 300px;
+  }
+  .user-deshboard .tab-content .achievement-box span img {
+    width: 50px;
+    height: 50px;
   }
   .content-page .content-main {
     padding: 20px;
