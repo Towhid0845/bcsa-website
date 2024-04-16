@@ -3721,21 +3721,6 @@ form .billing-section textarea:focus {
   color: #FFC107;
   background-color: rgba(255, 124, 8, 0.1);
 }
-.user-deshboard .profile-form .file-upload {
-  border: 2px dashed rgba(173, 170, 170, 0.5);
-  padding: 50px 24px;
-  position: relative;
-  overflow: hidden;
-}
-.user-deshboard .profile-form .file-upload input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  cursor: pointer;
-}
 .user-deshboard .label-input-field {
   position: relative;
   margin-top: 8px;
@@ -3841,6 +3826,22 @@ form .billing-section textarea:focus {
   margin-top: -80px;
 }
 
+.profile-form .file-upload {
+  border: 2px dashed rgba(173, 170, 170, 0.5);
+  padding: 50px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.profile-form .file-upload input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .login-section {
   display: flex;
   align-items: center;
@@ -3920,6 +3921,14 @@ form .billing-section textarea:focus {
 }
 .login-section .login-form-wrap .google-btn:hover {
   border-color: #FFC107;
+}
+
+.register-section .login-form-wrap .auth-input {
+  padding: 10px 24px;
+}
+
+.register-section .login-form-wrap label span {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

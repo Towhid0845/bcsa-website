@@ -158,54 +158,152 @@
   <!-- navbar part end -->
 
   <!-- signup -->
-  <section class="login-section py-5">
+  <section class="login-section register-section py-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-5 col-12 login-img shadow" style="background-image: url(./images/cr6.jpg);"></div>
+        <!-- <div class="col-lg-5 col-12 login-img shadow" style="background-image: url(./images/cr6.jpg);"></div> -->
 
-        <div class="col-lg-5 col-12 bg-white d-flex p-0 shadow">
+        <div class="col-lg-7 col-12 bg-white d-flex p-0 shadow">
           <form class="login-form-wrap px-4 py-5 w-100">
             <div class="text-center mb-4">
               <a href="index.php"><img src="./images/logo.png" alt="logo"></a>
             </div>
-            <h4 class="mb-3 text-center">Get started absolutely free</h4>
-            <p class="fs-xs mb-1">Already a member? <a href="member-login.html" class="text-secondary">Login</a></p>
+            <h4 class="mb-3 text-center">Member Registration Form</h4>
+
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="input-field">
+                  <label for="">First Name</label>
                   <input type="text" placeholder="First name" class="auth-input">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="input-field">
+                  <label for="">Last Name</label>
                   <input type="text" placeholder="Last name" class="auth-input">
                 </div>
               </div>
-              <div class="col-sm-12">
+              <div class="col-sm-6">
                 <div class="input-field">
+                  <label for="">Email</label>
                   <input type="email" placeholder="Email address" class="auth-input">
                 </div>
               </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">Phone No</label>
+                  <input type="text" placeholder="Phone no" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">Date of Birth</label>
+                  <input type="date" placeholder="Date of birth" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">Gender</label>
+                  <input type="text" placeholder="Gender" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">Blood Group</label>
+                  <input type="text" placeholder="Blood group" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">Country</label>
+                  <input type="text" placeholder="Country" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">State</label>
+                  <input type="text" placeholder="State" class="auth-input">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-field">
+                  <label for="">Postal Code</label>
+                  <input type="text" placeholder="State" class="auth-input">
+                </div>
+              </div>
               <div class="col-sm-12">
+                <label for="">Address</label>
+                <div class="input-field">
+                  <textarea name="" id="" cols="" rows="4" class="w-100 auth-input"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="profile-form">
+                  <div class="file-upload text-center rounded-3 mb-5">
+                    <input type="file" name="dp">
+                    <img src="./images/upload-icon.svg" alt="dp" class="img-fluid">
+                    <p class="text-dark cmn-label mb-2 mt-3">
+                      Drop your Image here or
+                      <a href="#" class="text-primary">browse</a>
+                    </p>
+                    <p class="mb-0 file-name">
+                      (Only *.jpeg and *.png images will be accepted)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="" class="">Type of Membership<span>*</span></label>
+                <div class="input-field">
+                  <input type="checkbox" id="EC" name="EC" value="Bike">
+                  <label for="vehicle1"> EC</label><br>
+                  <input type="checkbox" id="Lifetime" name="Lifetime" value="Car">
+                  <label for="vehicle2"> Lifetime</label><br>
+                  <input type="checkbox" id="General" name="General" value="Boat">
+                  <label for="vehicle3"> General</label><br>
+                  <input type="checkbox" id="Associate" name="Associate" value="Boat">
+                  <label for="vehicle3"> Associate</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="" class="">Payment<span>*</span></label>
+                <div class="input-field">
+                  <input type="checkbox" id="EC" name="EC" value="Bike">
+                  <label for="vehicle1"> Bank</label><br>
+                  <input type="checkbox" id="Lifetime" name="Lifetime" value="Car">
+                  <label for="vehicle2"> Mobile Bnaking</label><br>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="">Password</label>
                 <div class="input-field check-password">
                   <input type="password" placeholder="Password" class="auth-input">
                   <span class="eye eye-icon"><i class="fa-solid fa-eye"></i></span>
                   <span class="eye eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
                 </div>
               </div>
-            </div>
-            <div class="row g-4 mt-4">
               <div class="col-sm-6">
-                <button type="submit" class="create-btn w-100">Sign Up</button>
+                <label for="">Confirm Password</label>
+                <div class="input-field check-password">
+                  <input type="password" placeholder="Password" class="auth-input">
+                  <span class="eye eye-icon"><i class="fa-solid fa-eye"></i></span>
+                  <span class="eye eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
               </div>
-              <div class="col-sm-6">
-                <a href="#" class="google-btn w-100"><img src="./images/google.png" alt="google" class="me-2">Sign Up
-                  with
-                  Google</a>
+              <div class="col-sm-12">
+                <div class="input-field">
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1" class="mb-0 fs-xs">By signing up, I agree to <a href="#" class="text-dark">Terms
+                      of Use and Privacy Policy</a></label>
+                </div>
               </div>
             </div>
-            <p class="mb-0 fs-xs mt-4 text-center">By signing up, I agree to <a href="#" class="text-dark">Terms of Use
-                and Privacy Policy</a></p>
+            <div class="row g-4 mt-4 justify-content-center">
+              <div class="col-sm-3">
+                <button type="submit" class="create-btn w-100">Submit</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
