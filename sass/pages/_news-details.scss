@@ -12,10 +12,14 @@
     .image {
       overflow: hidden;
       border-radius: 10px;
+      height: 571px;
 
       img {
         border-radius: 10px;
         transition: all 0.3s ease 0s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
       &:hover {
@@ -126,85 +130,88 @@
     }
   }
 
-  .news-right {
-    position: sticky;
-    top: 20px;
-    bottom: 0;
+}
 
-    .info-block {
-      margin-bottom: 24px;
-      border-radius: 10px;
-      padding: 30px;
-      background-color: #f2f2f2;
+.news-right {
+  position: sticky;
+  top: 20px;
+  bottom: 0;
 
-      .news-title {
-        @include font(22px, 600);
-      }
+  .info-block {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #f2f2f2;
 
-      .search {
-        .input-groups {
-          position: relative;
+    .news-title {
+      @include font(22px, 600);
+    }
 
-          input {
-            width: 100%;
-            height: 50px;
-            border-radius: 3px;
-            border: 0;
-            background-color: $white;
-            padding: 0 40px 0 20px;
-            border: 1px solid transparent;
+    .search {
+      .input-groups {
+        position: relative;
 
-            &:focus {
-              border-color: $themeColor;
-            }
-          }
+        input {
+          width: 100%;
+          height: 50px;
+          border-radius: 3px;
+          border: 0;
+          background-color: $white;
+          padding: 0 40px 0 20px;
+          border: 1px solid transparent;
 
-          button {
-            position: absolute;
-            top: 50%;
-            right: 16px;
-            transform: translateY(-50%);
-            font-size: 18px;
-            background-color: transparent;
-            border: 0;
+          &:focus {
+            border-color: $themeColor;
           }
         }
+
+        button {
+          position: absolute;
+          top: 50%;
+          right: 16px;
+          transform: translateY(-50%);
+          font-size: 18px;
+          background-color: transparent;
+          border: 0;
+        }
       }
+    }
 
-      .small-news-item {
-        margin-top: 24px;
+    .small-news-item {
+      margin-top: 24px;
 
-        .recent-news {
-          .image {
-            margin-right: 14px;
-            width: 100px;
-            height: 70px;
+      .recent-news {
+        .image {
+          margin-right: 14px;
+          width: 31%;
+          height: 70px;
 
-            img {
-              width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+
+        .text {
+          width: 69%;
+
+          h5 {
+            @include font(15px, 500);
+            color: $black;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            transition: all linear .2s;
+
+            &:hover {
+              color: $themeColor;
             }
           }
 
-          .text {
-            h5 {
-              @include font(15px, 500);
-              color: $black;
-              overflow: hidden;
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
-              transition: all linear .2s;
-
-              &:hover {
-                color: $themeColor;
-              }
-            }
-
-            span {
-              @include font(13px, 400);
-              color: $black;
-              margin-top: 10px;
-            }
+          span {
+            @include font(13px, 400);
+            color: $black;
+            margin-top: 10px;
           }
         }
       }

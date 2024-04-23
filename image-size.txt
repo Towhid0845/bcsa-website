@@ -1,16 +1,54 @@
-Image croping size:
--------------------
+Image croping size and Thump size:
+----------------------------------
 
-Banner: 1920px * 720px
+Banner crop: 1920px * 720px
 
-About: 696px * 450px
 
-Breadcrumb: 1920px * 250px
 
-Product detail Image: 900px * 716px
+Breadcrumb crop: 1920px * 250px
 
-Event detail & News detail: 856px * 591px
+
+
+About crop: 696px * 450px
+
+
+
+Event crop(detail page big image): 856px * 571px
+Event Index thump + Event list thump: 342px * 228px
+Event dashboard thump: 377px * 251px
+
+
+
+News crop(detail page big image): 856px * 571px
+News Index thump + News list thump: 414px * 276px
+
+
+
+Details page Side column image thumb (event and news): 193px * 129px
+
+
+
+Partner crop: 184px * 123px
+
+
+
+Member crop: 310px * 318px
+
+
+
+Product crop(detail page big image): 716px * 680px 
+product index thumb: 276px * 262px
+product list thumb: 216px * 205px
+product summary thumb: 264px * 251px
+
+
 
 Contact Us: 636px * 600px
+
+
+
+Profile Image crop: 192px * 128px
+
+
 
 Login page: 550px * 600px

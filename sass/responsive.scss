@@ -101,8 +101,20 @@
     font-size: 44px;
   }
 
+  .products-item .image {
+    height: 184px;
+  }
+
+  .products-item .home_image {
+    height: 247px;
+  }
+
   .product-item .text h4 {
     font-size: 18px;
+  }
+
+  .about .about-image {
+    height: 353px;
   }
 
   .about .about-bg .about-info {
@@ -140,6 +152,10 @@
     padding: 10px 20px;
   }
 
+  .news-item .image {
+    height: 237px;
+  }
+
   // home page end
 
   // content page start
@@ -156,7 +172,7 @@
 
   // list page css start
   .member-list .member-item .image {
-    height: 240px;
+    height: 254px;
   }
 
   .member-list .member-item .text {
@@ -164,7 +180,7 @@
   }
 
   .news-list .news-items .news-image {
-    height: 240px;
+    height: 236px;
   }
 
   .news-list .news-items .news-text .info {
@@ -186,7 +202,7 @@
   }
 
   .event-part .event-box .event-item .image {
-    height: 200px;
+    height: 196px;
   }
 
   .event-part .event-box .event-item .text {
@@ -194,7 +210,7 @@
   }
 
   .partner-list .partner-item .image {
-    height: 120px;
+    height: 89px;
     padding: 0 16px;
   }
 
@@ -211,6 +227,25 @@
   }
 
   // list page css end
+
+  // detail page start
+  .event-details-page .img,
+  .news-details-page .news-left .image {
+    height: 491px;
+  }
+
+  .news-right .info-block .small-news-item .recent-news .image {
+    height: 58px;
+  }
+
+  .product-summery .products-item .product-img {
+    height: 208px;
+  }
+
+  // dashboard start
+  .user-deshboard .event-part .event-box .event-item .image {
+    height: 215px;
+  }
 
   // footer part start
 
@@ -283,6 +318,10 @@
     height: 440px;
   }
 
+  .about .about-image {
+    height: 295px;
+  }
+
   .about .about-info {
     padding: 20px 0;
     padding-left: 20px;
@@ -295,11 +334,15 @@
 
   .event-part .event-box .event-item .text {
     // height: 161px;
-    padding: 16px 20px;
+    padding: 10px 20px;
   }
 
   .news-item .image {
-    height: 200px;
+    height: 197px;
+  }
+
+  .products-item .home_image {
+    height: 205px;
   }
 
   .contact-map .map-container .contact-form {
@@ -346,7 +389,7 @@
 
   // list page css start
   .member-list .member-item .image {
-    height: 260px;
+    height: 286px;
   }
 
   .member-list .search-top .title h2 {
@@ -354,7 +397,7 @@
   }
 
   .news-list .news-items .news-image {
-    height: 200px;
+    height: 196px;
   }
 
   .news-list .news-items .news-text .info .title {
@@ -370,8 +413,16 @@
     width: 306px;
   }
 
+  .event-part .event-box .event-item .image {
+    height: 163px;
+  }
+
   .event-part .event-box .event-item .text .title {
     font-size: 18px;
+  }
+
+  .partner-list .partner-item .image {
+    height: 123px;
   }
 
   // list page css end
@@ -395,6 +446,20 @@
 
   // content page end
 
+  // details page start
+  .event-details-page .img,
+  .news-details-page .news-left .image {
+    height: 411px;
+  }
+
+  .news-right .info-block .small-news-item .recent-news .image {
+    height: 46px;
+  }
+
+  .product-summery .products-item .product-img {
+    height: 165px;
+  }
+
   // dashboard start
   .user-deshboard .account-info .profile-inf-right .achievement-box {
     min-height: 95px;
@@ -407,6 +472,10 @@
   header.member-header {
     background-color: #1D272F;
     height: 60px;
+  }
+
+  .user-deshboard .event-part .event-box .event-item .image {
+    height: 181px;
   }
 
   // dashboard end
@@ -459,12 +528,24 @@
     height: 340px;
   }
 
+  .about .about-image {
+    height: 450px;
+  }
+
   .about .about-info {
     padding-left: 0;
   }
 
   .products .product-bg {
     padding: 50px 0;
+  }
+
+  .products-item .image {
+    height: 209px;
+  }
+
+  .news-item .image {
+    height: 224px;
   }
 
   .news-item .text .title {
@@ -496,7 +577,7 @@
 
   // list page css start
   .member-list .member-item .image {
-    height: 280px;
+    height: 318px;
   }
 
   .member-list .search-top .title h2 {
@@ -504,7 +585,15 @@
   }
 
   .news-list .news-items .news-image {
-    height: 225px;
+    height: 223px;
+  }
+
+  .event-part .event-box .event-item .image {
+    height: 183px;
+  }
+
+  .partner-list .partner-item .image {
+    height: 83px;
   }
 
   // list page css end
@@ -517,6 +606,20 @@
   }
 
   // checkout end
+
+  // details page start
+  .event-details-page .img,
+  .news-details-page .news-left .image {
+    height: 464px;
+  }
+
+  .news-right .info-block .small-news-item .recent-news .image {
+    height: 129px;
+  }
+
+  .product-summery .products-item .product-img {
+    height: 162px;
+  }
 
   // dashboard start
   .user-deshboard .account-info .profile-inf-right .profile-achievements {
@@ -597,11 +700,11 @@
   }
 
   .about .about-image {
-    height: 290px;
+    height: 334px;
   }
 
   .event-part .event-box .event-item .text {
-    padding: 12px 20px;
+    padding: 8px 20px;
   }
 
   .event-part .event-box .event-item .text span {
@@ -617,11 +720,25 @@
     padding: 40px 0;
   }
 
+  .products-item .home_image {
+    height: 233px;
+  }
+
   .news-item .image {
-    height: 310px;
+    height: 344px;
   }
 
   // home page end
+
+  // details page start
+  .event-details-page .img,
+  .news-details-page .news-left .image {
+    height: 344px;
+  }
+
+  .news-right .info-block .small-news-item .recent-news .image {
+    height: 91px;
+  }
 
   // content page start
   .content-page .content-main h1 {
@@ -644,7 +761,7 @@
 
   // list page css start
   .member-list .member-item .image {
-    height: 220px;
+    height: 226px;
   }
 
   .member-list .member-item .text {
@@ -660,7 +777,7 @@
   }
 
   .news-list .news-items .news-image {
-    height: 175px;
+    height: 163px;
   }
 
   .news-list .news-items .news-text .info .title {
@@ -678,18 +795,31 @@
 
   .event-part .event-box .event-item .image {
     width: 40%;
-    height: 150px;
+    height: 137px;
   }
 
   .gallery-item .image {
     height: 180px;
   }
 
+  .products-item .image {
+    height: 237px;
+  }
+
   // list page css end
+
+  // details page start
+  .product-summery .products-item .product-img {
+    height: 182px;
+  }
 
   // dashboard start
   .user-deshboard .account-info .profile-inf-right .achievement-box {
     padding: 5px 10px;
+  }
+
+  .user-deshboard .event-part .event-box .event-item .image {
+    height: 131px;
   }
 
   // dashboard end
@@ -752,12 +882,12 @@
   }
 
   .about .about-image {
-    height: 250px;
+    height: auto;
   }
 
   .event-part .event-box .event-item .image {
     width: 100%;
-    height: 290px;
+    height: auto;
   }
 
   .event-part .event-box .event-item .text {
@@ -773,8 +903,13 @@
     padding: 30px 0;
   }
 
+  .products-item .image,
+  .products-item .home_image {
+    height: auto;
+  }
+
   .news-item .image {
-    height: 290px;
+    height: auto;
   }
 
   .contact-map .map-container .contact-form {
@@ -785,7 +920,7 @@
 
   // list page css start
   .member-list .member-item .image {
-    height: 280px;
+    height: auto;
   }
 
   .member-list .search-top .title h2 {
@@ -793,19 +928,41 @@
   }
 
   .news-list .news-items .news-image {
-    height: 305px;
+    height: auto;
   }
 
   .gallery-item .image {
     height: 300px;
   }
 
+  .partner-list .partner-item .image {
+    height: auto;
+  }
+
   // list page css end
+
+  // details page start
+  .event-details-page .img,
+  .news-details-page .news-left .image {
+    height: auto;
+  }
+
+  .news-right .info-block .small-news-item .recent-news .image {
+    height: auto;
+  }
+
+  .product-summery .products-item .product-img {
+    height: auto;
+  }
 
   // dashboard start
   .user-deshboard .tab-content .achievement-box span img {
     width: 50px;
     height: 50px;
+  }
+
+  .user-deshboard .event-part .event-box .event-item .image {
+    height: auto;
   }
 
   // dashboard end

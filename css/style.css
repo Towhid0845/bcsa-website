@@ -864,7 +864,7 @@ nav ul li:hover > ul {
   transition: all linear 0.2s;
 }
 .products-item .image {
-  height: 180px;
+  height: 212px;
   padding: 14px;
 }
 .products-item .image a {
@@ -872,6 +872,19 @@ nav ul li:hover > ul {
   height: 100%;
 }
 .products-item .image img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.products-item .home_image {
+  height: 290px;
+  padding: 14px;
+}
+.products-item .home_image a {
+  width: 100%;
+  height: 100%;
+}
+.products-item .home_image img {
   height: 100%;
   object-fit: contain;
   object-position: center;
@@ -942,7 +955,7 @@ nav ul li:hover > ul {
   padding-top: 80px;
 }
 .about .about-image {
-  height: 450px;
+  height: 411px;
 }
 .about .about-image img {
   height: 100%;
@@ -992,7 +1005,7 @@ nav ul li:hover > ul {
 }
 .event-part .event-box .event-item .image {
   width: 40%;
-  height: 246px;
+  height: 228px;
   position: relative;
 }
 .event-part .event-box .event-item .image::before {
@@ -1065,7 +1078,7 @@ nav ul li:hover > ul {
   transition: all linear 0.2s;
 }
 .products-item .image {
-  height: 180px;
+  height: 212px;
   padding: 14px;
 }
 .products-item .image a {
@@ -1073,6 +1086,19 @@ nav ul li:hover > ul {
   height: 100%;
 }
 .products-item .image img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.products-item .home_image {
+  height: 290px;
+  padding: 14px;
+}
+.products-item .home_image a {
+  width: 100%;
+  height: 100%;
+}
+.products-item .home_image img {
   height: 100%;
   object-fit: contain;
   object-position: center;
@@ -1144,7 +1170,7 @@ nav ul li:hover > ul {
 }
 
 .news-item .image {
-  height: 282px;
+  height: 277px;
   overflow: hidden;
 }
 .news-item .image img {
@@ -1505,7 +1531,7 @@ footer .footer-bg .footer-btm a {
 }
 .news-list .news-items .news-image {
   position: relative;
-  height: 305px;
+  height: 276px;
   overflow: hidden;
 }
 .news-list .news-items .news-image a {
@@ -1593,7 +1619,7 @@ footer .footer-bg .footer-btm a {
   margin-bottom: 24px;
 }
 .partner-list .partner-item .image {
-  height: 150px;
+  height: 104px;
   padding: 0 20px;
   margin: 0 auto;
   overflow: hidden;
@@ -1662,7 +1688,7 @@ footer .footer-bg .footer-btm a {
   color: #ffffff;
 }
 .member-list .member-item .image {
-  height: 314px;
+  height: 300px;
   width: 100%;
 }
 .member-list .member-item .image img {
@@ -1908,10 +1934,14 @@ footer .footer-bg .footer-btm a {
 .news-details-page .news-left .image {
   overflow: hidden;
   border-radius: 10px;
+  height: 571px;
 }
 .news-details-page .news-left .image img {
   border-radius: 10px;
   transition: all 0.3s ease 0s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .news-details-page .news-left .image:hover img {
   transform: scale(1.1);
@@ -2001,25 +2031,26 @@ footer .footer-bg .footer-btm a {
   font-size: 16px;
   font-weight: 400;
 }
-.news-details-page .news-right {
+
+.news-right {
   position: sticky;
   top: 20px;
   bottom: 0;
 }
-.news-details-page .news-right .info-block {
+.news-right .info-block {
   margin-bottom: 24px;
   border-radius: 10px;
   padding: 30px;
   background-color: #f2f2f2;
 }
-.news-details-page .news-right .info-block .news-title {
+.news-right .info-block .news-title {
   font-size: 22px;
   font-weight: 600;
 }
-.news-details-page .news-right .info-block .search .input-groups {
+.news-right .info-block .search .input-groups {
   position: relative;
 }
-.news-details-page .news-right .info-block .search .input-groups input {
+.news-right .info-block .search .input-groups input {
   width: 100%;
   height: 50px;
   border-radius: 3px;
@@ -2028,10 +2059,10 @@ footer .footer-bg .footer-btm a {
   padding: 0 40px 0 20px;
   border: 1px solid transparent;
 }
-.news-details-page .news-right .info-block .search .input-groups input:focus {
+.news-right .info-block .search .input-groups input:focus {
   border-color: #FFC107;
 }
-.news-details-page .news-right .info-block .search .input-groups button {
+.news-right .info-block .search .input-groups button {
   position: absolute;
   top: 50%;
   right: 16px;
@@ -2040,18 +2071,21 @@ footer .footer-bg .footer-btm a {
   background-color: transparent;
   border: 0;
 }
-.news-details-page .news-right .info-block .small-news-item {
+.news-right .info-block .small-news-item {
   margin-top: 24px;
 }
-.news-details-page .news-right .info-block .small-news-item .recent-news .image {
+.news-right .info-block .small-news-item .recent-news .image {
   margin-right: 14px;
-  width: 100px;
+  width: 31%;
   height: 70px;
 }
-.news-details-page .news-right .info-block .small-news-item .recent-news .image img {
+.news-right .info-block .small-news-item .recent-news .image img {
   width: 100%;
 }
-.news-details-page .news-right .info-block .small-news-item .recent-news .text h5 {
+.news-right .info-block .small-news-item .recent-news .text {
+  width: 69%;
+}
+.news-right .info-block .small-news-item .recent-news .text h5 {
   font-size: 15px;
   font-weight: 500;
   color: #1D272F;
@@ -2061,10 +2095,10 @@ footer .footer-bg .footer-btm a {
   -webkit-box-orient: vertical;
   transition: all linear 0.2s;
 }
-.news-details-page .news-right .info-block .small-news-item .recent-news .text h5:hover {
+.news-right .info-block .small-news-item .recent-news .text h5:hover {
   color: #FFC107;
 }
-.news-details-page .news-right .info-block .small-news-item .recent-news .text span {
+.news-right .info-block .small-news-item .recent-news .text span {
   font-size: 13px;
   font-weight: 400;
   color: #1D272F;
@@ -2611,8 +2645,16 @@ footer .footer-bg .footer-btm a {
   width: 100%;
   background-color: #F4F4F4;
 }
-.product-summery .product-item .product-img {
-  height: 256px;
+.product-summery .products-item .product-img {
+  height: 251px;
+}
+.product-summery .products-item .product-img a {
+  width: 100%;
+  height: 100%;
+}
+.product-summery .products-item .product-img a img {
+  width: 100%;
+  height: 100%;
 }
 .product-summery .product-info {
   height: 118px;
@@ -2933,6 +2975,7 @@ footer .footer-bg .footer-btm a {
 .event-details-page .img {
   width: 100%;
   position: relative;
+  height: 571px;
 }
 
 .event-details-page .img img {
@@ -3824,6 +3867,9 @@ form .billing-section textarea:focus {
 }
 .user-deshboard .event-part {
   margin-top: -80px;
+}
+.user-deshboard .event-part .event-box .event-item .image {
+  height: 251px;
 }
 
 .profile-form .file-upload {
